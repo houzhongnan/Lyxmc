@@ -7,11 +7,13 @@
 	<typeAliases>
 		<!-- 将com.lcvc.ebuytest3.model.Admin类重新起一个名字Admin，供mybatis的映射文件使用 -->
 		<typeAlias alias="Admin" type="com.lyxm.lychengdu.model.Admin"/>
+		<typeAlias alias="User" type="com.lyxm.lychengdu.model.User"/>
 	</typeAliases>
 
 	<mappers>
 		<!--注册adminMappe.xml文件 -->
 	    <mapper resource="com/lyxm/lychengdu/dao/mapper/adminMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/userMapper.xml"/>
 	</mappers>
 
 
