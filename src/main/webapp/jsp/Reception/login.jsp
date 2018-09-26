@@ -1,11 +1,45 @@
 <!DOCTYPE html>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <html>
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>用户登录</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<script src="js/jquery-1.12.4.js"></script>
+
+		<script language="javascript">
+            $(function() {
+
+
+
+                $("#login_button").click(function() {
+                    //使用ajax执行登录操作
+                    //第一个参数指要访问的服务端地址；
+                    //第二个参数，指要传递的表单的数据，$("#myForm").serialize()
+                    //第三个参数，function(data)用于接收服务端返回来的值，data
+                    $.post("<%=basePath%>/login",
+                        $("#myForm").serialize(),
+                        function(data) {
+                            //根据服务端返回来的值，判断登录是否成功
+                            if(data.status==1){
+                                location.href="<%=basePath%>admin/index";
+                            }else{
+                                alert("登录失败");
+                            }
+                        });
+                });
+
+                $('.loginbox').css({ 'position': 'absolute', 'left': ($(window).width() - 692) / 2 });
+                $(window).resize(function() {
+                    $('.loginbox').css({ 'position': 'absolute', 'left': ($(window).width() - 692) / 2 });
+                })
+            });
+		</script>
+
 	</head>
 
 	<body>
@@ -30,7 +64,7 @@ window.close();
                             <!--登陆模块开始-->
 								<div class="q-login-layout"  id="signin"  style="display: none;">
 									<div class="q-login-form-tip"><span class="tip-error" >
-									</div>
+									</span></div>
 									
 										<!--登陆标题-->
                                         <div class="q-login-title"><span>账户登陆</span></div>

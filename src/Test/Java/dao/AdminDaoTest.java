@@ -16,6 +16,6 @@ public class AdminDaoTest extends SpringJunitTest {
     @Test
     public void loginTest(){
         Admin admin=adminDao.login("user","123456");
-        System.out.println(admin.getName());
+        //System.out.println(admin.getName());
     }
 }
