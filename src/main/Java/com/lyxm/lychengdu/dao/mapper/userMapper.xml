@@ -6,6 +6,6 @@
 
     <!-- 处理登录操作 -->
     <insert id="addUser">
-        insert into User values(null,#{u_username},#{u_password},#{u_name},#{u_phone},#{u_email},#{u_createTime})
+        insert into User values(null,#{u_username},#{u_password},#{u_name},#{u_phone},#{u_createTime},#{u_email})
     </insert>
 </mapper>
