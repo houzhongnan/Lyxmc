@@ -14,7 +14,7 @@ public interface AdminDao {
 	 * 处理数据库的登录方法
 	 * @return null表示登录失败
 	 */
-	Admin login(@Param(value = "username") String username, @Param(value = "password") String password);
+	Admin login(@Param(value = "a_username") String a_username, @Param(value = "a_password") String a_password);
 
 
 }

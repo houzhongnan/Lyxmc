@@ -11,16 +11,16 @@
     <meta charset="utf-8"/>
     <title></title>
 </head>
-<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-<link rel="stylesheet" href="css/bookstore.css"/>
+<script type="text/javascript" src="<%=basePath%>jsp/Reception/js/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="<%=basePath%>jsp/Reception/css/bookstore.css"/>
 <!--<link rel="stylesheet" href="css/bootstrap.css" />-->
 <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
-<link rel="stylesheet" href="css/font-awesome.css"/>
-<link rel="stylesheet" href="css/index.css"/>
-<link rel="stylesheet" href="css/login.css"/>
-<link rel="stylesheet" type="text/css" href="css/banner.css">
-<script src="js/js/jquery-1.12.4.js"></script>
-
+<link rel="stylesheet" href="<%=basePath%>jsp/Reception/css/font-awesome.css"/>
+<link rel="stylesheet" href="<%=basePath%>jsp/Reception/css/index.css"/>
+<link rel="stylesheet" href="<%=basePath%>jsp/Reception/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="<%=basePath%>jsp/Reception/css/banner.css">
+<script src="<%=basePath%>jsp/Reception/js/jquery-1.12.4.js"></script>
+<script src="<%=basePath%>jsp/Reception/js/wySilder.min.js"></script>
 <body>
 <!--最外层div-->
 <div class="container">
@@ -43,7 +43,7 @@
                             <!--logo div开始-->
                             <a href="#" data-bn-ipg="head-logo">
                                 <!--logo-->
-                                <img src="img/logo.png" width="90" height="50">
+                                <img src="<%=basePath%>jsp/Reception/img/logo.png" width="90" height="50">
                             </a>
                         </div>
                         <!--logodiv结束-->
@@ -83,7 +83,7 @@
                             <li class="nav-list nav-lists">
 
                                 <iframe id="fancybox-frame" name="fancybox-frame1537327510878" height="70"
-                                        frameborder="0" scrolling="no" hspace="0" src="天气预报.jsp"></iframe>
+                                        frameborder="0" scrolling="no" hspace="0" src="<%=basePath%>Reception/weather.jsp"></iframe>
                         </ul>
                         <!--Nav结束-->
                     </div>
@@ -115,7 +115,7 @@
                                 <!--微博登入-->
                                 <a href="#" class="login-link" onClick="up()">注册</a>
                                 <!--login-->
-                                <a href="#" class="login-link" onClick="mm()">登录</a>
+                                <a href="/Reception/login" class="login-link" onClick="mm()">登录</a>
                                 <!--login-->
                             </div>
                         </div>
@@ -144,20 +144,20 @@
                             <div class="silder-scroll">
                                 <div class="silder-main">
                                     <div class="silder-main-img">
-                                        <img src="<%=basePath %>img/1-1.jpg" alt="">
+                                        <img src="<%=basePath%>jsp/Reception/img/1-1.jpg" alt="">
                                     </div>
                                     <div class="silder-main-img">
-                                        <img src="<%=basePath %>img/2-1.jpg" alt="">
+                                        <img src="<%=basePath%>jsp/Reception/img/2-1.jpg" alt="">
                                     </div>
                                     <div class="silder-main-img">
-                                        <img src="<%=basePath %>img/3-1.jpg" alt="">
+                                        <img src="<%=basePath%>jsp/Reception/img/3-1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-                        <script src="js/wySilder.min.js" type="text/javascript"></script>
+                        <script src="<%=basePath%>jsp/Reception/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+                        <script src="<%=basePath%>jsp/Reception/js/wySilder.min.js" type="text/javascript"></script>
                         <script>
                             $(function () {
                                 $(".js-silder").silder({
@@ -267,7 +267,7 @@
                             <li>
                                 <div data-type="bbs" class="item">
                                     <div class="img">
-                                        <a data-bn-ipg="index-guess-bbs-p3" href="#" src="img/275x185 (1).jpg">
+                                        <a data-bn-ipg="index-guess-bbs-p3" href="#" src="<%=basePath%>jsp/Reception/img/275x185 (1).jpg">
                                             <div class="tag"><span class="bt">线路</span></div>
                                         </a>
                                     </div>
