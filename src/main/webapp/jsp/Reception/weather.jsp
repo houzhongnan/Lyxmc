@@ -1,9 +1,13 @@
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+%>
 <!DOCTYPE html>
 <html>
 	<html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>成都天气预报代码调用</title>
-    <link href="css/天气预报.css" rel="stylesheet" type="text/css">
+    <link href="<%=basePath%>jsp/Reception/css/天气预报.css" rel="stylesheet" type="text/css">
     <!--[if IE 6]>
     <script type="text/javascript" mce_src="DD_belatedPNG.js" src="//img.tianqijun.com/static/js/DD_belatedPNG.js"></script>
     <script type="text/javascript">DD_belatedPNG.fix(".pngtqico");</script>

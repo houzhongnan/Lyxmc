@@ -1,10 +1,15 @@
 package com.lyxm.lychengdu.model;
 
+import javax.xml.crypto.Data;
+
 public class Admin {
     private Integer id;
-    private String name;
-    private String username;
-    private String password;
+    private String a_username;
+    private String a_password;
+
+    private String a_name;
+    private String a_image;
+    private Data a_createTime;
 
     public Integer getId() {
         return id;
@@ -14,27 +19,43 @@ public class Admin {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getA_username() {
+        return a_username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setA_username(String a_username) {
+        this.a_username = a_username;
     }
 
-    public String getUsername() {
-        return username;
+    public String getA_password() {
+        return a_password;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setA_password(String a_password) {
+        this.a_password = a_password;
     }
 
-    public String getPassword() {
-        return password;
+    public String getA_name() {
+        return a_name;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setA_name(String a_name) {
+        this.a_name = a_name;
+    }
+
+    public String getA_image() {
+        return a_image;
+    }
+
+    public void setA_image(String a_image) {
+        this.a_image = a_image;
+    }
+
+    public Data getA_createTime() {
+        return a_createTime;
+    }
+
+    public void setA_createTime(Data a_createTime) {
+        this.a_createTime = a_createTime;
     }
 }

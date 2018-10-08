@@ -1,58 +1,9 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%
-	String path = request.getContextPath();
-	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
 <!DOCTYPE html>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<script language="JavaScript" src="<%=basePath %>jsp/Reception/js/jquery.js"></script>
-		<script language="javascript">
-            //用于弹出窗口，将服务器返回的数据提交，本处用于账户提交后的状态
-            $(document).ready(function(){
-                function isNumber(value) { //验证是否为数字
-                    if(value != "") {
-                        var patrn = /^(-)?\d+(\.\d+)?$/;
-                        if(patrn.exec(value) == null || value == "") {
-                            return false;
-                        } else {
-                            return true;
-                        }
-                    } else {
-                        return false;
-                    }
-                }
-                $("#submit_button").click(function(){
-                    var status = true; //默认表单验证通过
-                    //执行表单验证
-                    //对产品名称进行验证
-                    //对产品名称进行验证
-                    if(status == true) { //如果表单验证通过
-                        //使用ajax执行登录操作
-                        //第一个参数指要访问的服务端地址；
-                        //第二个参数，指要传递的表单的数据，$("#myForm").serialize()
-                        $.post("<%=basePath %>Reception/userManage/DoAddUser",
-                            $("#myForm").serialize(),
-                            function(data){
-                                //根据服务端返回来的值，判断登录是否成功
-                                if(data.status==1){
-                                    alert("注册成功！");
-                                    $('#myForm')[0].reset();
-                                    //清空kindeditor内容
-                                    KindEditor.html("#content", "");
-                                }else{
-                                    alert(data.myMessage);
-                                }
-                            });
-                    }
-                });
-            });
-		</script>
 	</head>
 	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 	<link rel="stylesheet" href="css/bookstore.css" />
@@ -124,7 +75,7 @@
 									</li>
 
 									<li class="nav-list nav-lists">
-										<iframe id="fancybox-frame" name="fancybox-frame1537327510878" height="70" frameborder="0" scrolling="no" hspace="0" src="天气预报.html"></iframe>
+										<iframe id="fancybox-frame" name="fancybox-frame1537327510878" height="70" frameborder="0" scrolling="no" hspace="0" src="天气预报.jsp"></iframe>
 								</ul>
 								<!--Nav结束-->
 							</div>
@@ -1182,49 +1133,25 @@
 										</div>
 										<!--登陆模块结束-->
 										<!--注册模块开始-->
-										<fo class="q-login-layout" id="signup">
+										<div class="q-login-layout" id="signup">
 											<!--注册标题-->
 											<div class="q-login-title"><span>注册</span></div>
 											<div class="q-login-form-tip">
 											</div>
 
 											<div class="q-login-form">
-								<div class="q-login-form-control">
-									<div class="input-group">
-										<form id="myForm" method="post">
-										<div class="qui-select q-country-code" style="width: 78px; z-index: 10;"><span class="qui-select-text" style="height: 40px; line-height: 40px;">86</span>
-											<!--输入手机号-->
-										</div><label class="hide">手机号</label><input type="text"  name="u_username" title="手机号" placeholder="输入用于登录的手机号码" class="input input-phone" ></div>
-									<div class="input-tip"><span class="tip-error" style="display: none;"><i class="frame-iconfont frame-icon-tip"></i><span></span>
-										
-										</span>
-									</div>
-								</div>
-                                <!--注册邮箱输入框-->
-								<div class="q-login-form-control"><label class="hide">邮箱</label><input type="text" name="u_email"  title="邮箱" maxlength="15" placeholder="请输入邮箱" class="input" pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
-                               
-									<div class="input-tip"><span class="tip-error" style="display: none;"><i class="frame-iconfont frame-icon-tip"></i><span></span></span>
-									</div>
-								</div>
-                            
-									<!--空格div（不加的话会跳上来）-->
-									<div class="input-tip"></div>
-						<!--注册的输入用户名-->
-
-								<div class="q-login-form-control"><label class="hide">用户名</label><input type="text" name="u_name" title="用户名" maxlength="15" placeholder="起一个具有辨识度的用户名" class="input">
-                                <!--空格div（不加的话会跳上来）-->
-									<div class="input-tip"></div>
-								</div>
-                                <!--注册用户输入密码-->
-											<div class="q-login-form-control"><label class="hide">密码</label><input type="password"  name="u_password" title="密码" maxlength="16" placeholder="输入8-16位密码，需包含字母及数字" class="input">
-												<!--空格div（不加的话会跳上来）-->
-												<div class="input-tip"> </div>
-											</div>
-                                <!--注册的按钮-->
-								<div class="q-login-form-control"><input id="submit_button" type="button" class="btn" value="确定注册"/></div>
-								</form>
-							</div>
-
+												<!--注册用户名输入框-->
+												<div class="q-login-form-control"><label class="hide">用户名</label><input type="text" title="用户名" maxlength="15" placeholder="起一个具有辨识度的用户名" class="input">
+													<!--空格div（不加的话会跳上来）-->
+													<div class="input-tip"></div>
+												</div>
+												<!--注册用户输入密码-->
+												<div class="q-login-form-control"><label class="hide">密码</label><input type="password" title="密码" maxlength="16" placeholder="输入8-16位密码，需包含字母及数字" class="input">
+													<!--空格div（不加的话会跳上来）-->
+													<div class="input-tip"> </div>
+												</div>
+												<!--注册的按钮-->
+												<div class="q-login-form-control"><button class="btn"><span>注册</span></button></div>
 												<!--切换到注册的div-->
 												<div class="q-login-bottom"><span class="fl">
       已有帐号？<a href="javascript:;" onClick="denlu()">登录</a></span></div>
@@ -1240,9 +1167,6 @@
 					</div>
 				</div>
 				<!--注册登陆合并模块结束-->
-              
-                
-                
 
 				<!--中部分结束-->
 				<div style="width: 100%; height: 200px; background: #323232;color: #FFFFFF;">

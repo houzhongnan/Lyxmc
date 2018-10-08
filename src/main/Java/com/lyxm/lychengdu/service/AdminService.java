@@ -11,14 +11,14 @@ import javax.annotation.Resource;
 public class AdminService {
     @Resource
     private AdminDao adminDao;
+/*
+*登录
+* @return true表示登录成功
+* @return表示登录失败
+ */
+    public Admin login(String a_username,String a_password){
+       return adminDao.login(a_username, a_password);
 
-    public boolean login(String username,String password){
-        Admin admin=adminDao.login(username, password);
-        if(admin!=null){
-           return true;
-        }else{
-            return false;
-        }
     }
 
 
