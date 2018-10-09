@@ -24,11 +24,11 @@ public class UserManageController {
 
     @ResponseBody
     @RequestMapping(value="/Reception/userManage/DoAddUser",method = RequestMethod.POST)
-    public Map<String,Object> DoAddUser(User user, HttpServletRequest request){
-        Map<String,Object> map=new HashMap<String,Object>();//定义一个map集合
+    public String DoAddUser(User user, HttpServletRequest request) {
+        System.out.println("11111");
+        String i;
+        i = "ok";
         userService.addUser(user);
-            map.put("status", 1);
-
-        return map;
+        return i;
     }
 }

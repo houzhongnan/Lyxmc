@@ -1103,12 +1103,12 @@
 										});
 									</script>
 
-									<div class="q-login-content">
-										<!--登陆模块开始-->
-										<div class="q-login-layout" id="signin" style="display: none;">
-											<div class="q-login-form-tip"><span class="tip-error">
-									</div>
-									
+								<div class="q-login-content">
+									<!--登陆模块开始-->
+									<div class="q-login-layout" id="signin" style="display: none;">
+										<div class="q-login-form-tip"><span class="tip-error">
+										</div>
+
 										<!--登陆标题-->
                                         <div class="q-login-title"><span>登陆</span></div>
 
