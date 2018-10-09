@@ -1,7 +1,9 @@
 package dao;
 
 import com.lyxm.lychengdu.dao.AdminDao;
+import com.lyxm.lychengdu.dao.CustomerDao;
 import com.lyxm.lychengdu.model.Admin;
+import com.lyxm.lychengdu.model.Customer;
 import com.lyxm.lychengdu.test.SpringJunitTest;
 import org.junit.Test;
 
@@ -9,13 +11,20 @@ import javax.annotation.Resource;
 
 public class AdminDaoTest extends SpringJunitTest {
     @Resource
+    private CustomerDao customerDao;
+    @Resource
     private AdminDao adminDao;
     /*
     对login方法进行测试
      */
     @Test
     public void loginTest(){
-       Admin admin=adminDao.login("user","123456");
+        Customer customer=customerDao.login("user","123456");
+        System.out.println(customer.getC_name());
+    }
+    @Test
+    public void loginTest1(){
+        Admin admin=adminDao.login("user","123456");
         System.out.println(admin.getA_name());
     }
 }

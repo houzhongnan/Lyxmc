@@ -9,11 +9,21 @@ public class HelloController {
 
 
 	/*
-	 * 跳转到登录页面
+	 * 跳转前台首页
 	 */
 	@RequestMapping(value = "/Reception/index")
 	public String hello(){
 		return "/Reception/index.jsp";
+	}
+
+
+
+	/*
+	 * 跳转后台首页
+	 */
+	@RequestMapping(value = "/backstage/index")
+	public String back(){
+		return "/backstage/index.jsp";
 	}
 
 }
