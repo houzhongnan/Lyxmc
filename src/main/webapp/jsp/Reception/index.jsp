@@ -299,7 +299,8 @@
 								</div>
 								<!--今日推荐登录注册的小模块结束-->
 							</li>
-								<c:forEach var="strategyOfEach" items="${requestScope.list2}">
+
+								<c:forEach var="strategyOfEach" items="${requestScope.list}">
 								<li>
 									<div data-type="video" class="item">
 										<div class="img">
@@ -320,7 +321,6 @@
 										</div>
 									</div></c:forEach>
 								</li>
-
 						</ul>
 					</div>
 

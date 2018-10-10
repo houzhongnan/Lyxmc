@@ -1,8 +1,8 @@
-package com.lyxm.lychengdu.web.Reception;
+package com.lyxm.lychengdu.web.backstage;
 
 
-import com.lyxm.lychengdu.model.Customer;
-import com.lyxm.lychengdu.service.CustomerService;
+import com.lyxm.lychengdu.model.Admin;
+import com.lyxm.lychengdu.service.AdminService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,11 +14,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "/Reception")
-public class LoginController {
+@RequestMapping(value = "/backstage")
+public class LoginbackController {
 
 	@Resource
-	private CustomerService customerService;
+	private AdminService adminService;
 
 
 	/*
@@ -27,12 +27,12 @@ public class LoginController {
 
 	//@ResponseBody表示用json格式返回数据
 	@ResponseBody
-	@RequestMapping(value = "/login",method=RequestMethod.POST)
-	public Map<String,Integer> login(String c_name, String c_pass, HttpSession session){
+	@RequestMapping(value = "/loginback",method=RequestMethod.POST)
+	public Map<String,Integer> login(String a_username, String a_password, HttpSession session){
 		Map<String,Integer> map=new HashMap<String,Integer>();//定义一个map集合
-		Customer customer=customerService.login(c_name,c_pass);
-		if(customer!=null){//如果对象不为null,表示登录成功
-			session.setAttribute("customer", customer);
+		Admin admin=adminService.login(a_username,a_password);
+		if(admin!=null){//如果对象不为null,表示登录成功
+			session.setAttribute("admin", admin);
 			map.put("status", 1);
 			//return "redirect:/Reception/index";
 		}else{//如果登录失败
@@ -45,9 +45,9 @@ public class LoginController {
 	 *
 	 * 处理注销请求
 	 */
-	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	@RequestMapping(value = "/backlogout", method = RequestMethod.GET)
 	public String logout(HttpSession session){
-		session.removeAttribute("customer");
+		session.removeAttribute("admin");
 		return "/Reception/login.jsp";
 	}
 
@@ -55,9 +55,9 @@ public class LoginController {
 	 *
 	 * 跳转到首页
 	 */
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/backindex", method = RequestMethod.GET)
 	public String index(){
-		return "../jsp/Reception/index.jsp";
+		return "../jsp/backstage/index.jsp";
 	}
 	/*@RequestMapping(value = "/login")
 	public String login(String a_username,String a_password){

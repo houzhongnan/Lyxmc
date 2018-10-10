@@ -9,8 +9,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>用户登录</title>
-		<link rel="stylesheet" href="css/login.css" />
-		<script src="js/jquery-1.12.4.js"></script>
+		<link rel="stylesheet" href="<%=basePath%>jsp/Reception/css/login.css" />
+		<script src="<%=basePath%>jsp/Reception/js/jquery-1.12.4.js"></script>
 
 		<script language="javascript">
             $(function() {
@@ -22,12 +22,13 @@
                     //第一个参数指要访问的服务端地址；
                     //第二个参数，指要传递的表单的数据，$("#myForm").serialize()
                     //第三个参数，function(data)用于接收服务端返回来的值，data
-                    $.post("<%=basePath%>/Reception/login",
+                    $.post("<%=basePath%>Reception/login",
                         $("#myForm").serialize(),
                         function(data) {
                             //根据服务端返回来的值，判断登录是否成功
                             if(data.status==1){
-                                location.href="Reception/index";
+                              //  alert("登录成功");
+								location.href="<%=basePath%>Reception/index";
                             }else{
                                 alert("登录失败");
                             }
@@ -77,7 +78,7 @@ window.close();
 										<form id="myForm" method="post">
 										<!--登陆用户名输入框-->
 										<div class="q-login-form-control">
-                                        <label class="hide">用户名</label><input name="a_username" type="text" title="用户名" maxlength="15" placeholder="用户名"  value="user" class="input">
+                                        <label class="hide">用户名</label><input name="c_name" type="text" title="用户名"    value="user" class="input">
 
                                         <!--空格div（不加的话会跳上来）-->
 											<div class="input-tip">
@@ -85,12 +86,13 @@ window.close();
 										</div>
 										<div class="q-login-form-control" >
 											<!--登陆密码的输入框-->
-                                            <div class="q-login-form-control"><label class="hide">密码</label><input name="a_password" type="password" title="密码" placeholder="密码" value="123456" class="input"></div>
+                                            <div class="q-login-form-control"><label class="hide">密码</label><input name="c_pass" type="password" title="密码"  value="123456" class="input"></div>
 											<div class="input-tip"><a href="//passport.qyer.com/account/forget" data-bn-ipg="web-login-page-getpassword" target="_top" class="remember-link fr">忘记密码</a>
 											</div>
 										</div>
+											<div   class="q-login-form-control"><input type="button" class="btn" id="login_button" value="登录"></input></div>
+
 										</form>
-										<div  id="login_button" class="q-login-form-control"><button class="btn"><span>登录</span></button></div>
 									</div>
 									 <!--切换到登陆的div-->
 									<div class="q-login-bottom"><span class="fl"><span>没帐号？</span>

@@ -1,4 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>后台页面头部</title>
@@ -14,7 +20,7 @@
     <td align="left" valign="bottom">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="left" valign="bottom" id="header-name">侯马经济开发区</td>
+        <td align="left" valign="bottom" id="header-name">成都旅游网站</td>
         <td align="right" valign="top" id="header-right">
         	<a href="index.jsp" target="topFrame" onFocus="this.blur()" class="admin-out">注销</a>
             <a href="index.jsp" target="top" onFocus="this.blur()" class="admin-home">管理首页</a>
