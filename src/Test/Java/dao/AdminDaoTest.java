@@ -8,6 +8,7 @@ import com.lyxm.lychengdu.test.SpringJunitTest;
 import org.junit.Test;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 public class AdminDaoTest extends SpringJunitTest {
     @Resource
@@ -22,9 +23,17 @@ public class AdminDaoTest extends SpringJunitTest {
         Customer customer=customerDao.login("user","123456");
         System.out.println(customer.getC_name());
     }
+    /*后台登录login尝试*/
     @Test
     public void loginTest1(){
         Admin admin=adminDao.login("user","123456");
         System.out.println(admin.getA_name());
+    }
+
+    /*获取数据库测试*/
+    @Test
+    public  void adminmanageTest(){
+      // List<Admin> adminList=adminDao.getAdmins();
+       System.out.print(adminDao.getAdmin(1).getA_createTime());
     }
 }

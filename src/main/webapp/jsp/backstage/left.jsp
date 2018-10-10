@@ -10,6 +10,7 @@
 <title>左侧导航menu</title>
 <link href="css/css.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/sdmenu.js"></script>
+  <script language="JavaScript" src="<%=basePath%>jsp/backstage/js/jquery.js"></script>
 <script type="text/javascript">
 	// <![CDATA[
 	var myMenu;
@@ -27,7 +28,7 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
 <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
 <div id="left-top">
 	<div><img src="images/main/member.gif" width="44" height="44" /></div>
-    <span>用户：admin<br>角色：超级管理员</span>
+    <span>${admin.a_username}<br>角色：超级管理员</span>
 </div>
     <div style="float: left" id="my_menu" class="sdmenu">
       <div class="collapsed">
@@ -39,16 +40,16 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
         <a href="main_menu.jsp" target="mainFrame" onFocus="this.blur()">栏目管理</a>
       </div>
       <div>
-        <span>系统设置</span>
-        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">分组权限</a>
-        <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">级别权限</a>
-        <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">角色管理</a>
+        <span>管理员管理</span>
+        <a href="<%=basePath%>toAdminmanage" target="mainFrame" onFocus="this.blur()">管理员列表</a>
+        <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">社区公告</a>
+        <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">消息管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>
       </div>
       <div>
-        <span>系统设置</span>
-        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">分组权限</a>
-        <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">级别权限</a>
+        <span>游客管理</span>
+        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">游客列表</a>
+        <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">游客日志</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">角色管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>
       </div>

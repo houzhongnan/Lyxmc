@@ -6,6 +6,7 @@ import com.lyxm.lychengdu.model.Admin;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class AdminService {
@@ -22,4 +23,21 @@ public class AdminService {
     }
 
 
+    /*
+     * 从数据库的admin表中查找出所有记录（及所有字段）
+     * @return
+     */
+    public List<Admin> getAdmins(){
+        return adminDao.getAdmins();
+    }
+
+
+    /*
+     * 根据主键获取对应记录的值
+     * @param id 主键
+     * @return null表示没有获取到记录
+     */
+    public Admin getAdmin(Integer id){
+        return adminDao.getAdmin(id);
+    }
 }

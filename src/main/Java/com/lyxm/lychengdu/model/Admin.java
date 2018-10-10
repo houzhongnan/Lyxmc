@@ -1,6 +1,7 @@
 package com.lyxm.lychengdu.model;
 
-import javax.xml.crypto.Data;
+
+import java.util.Date;
 
 public class Admin {
     private Integer id;
@@ -9,7 +10,7 @@ public class Admin {
 
     private String a_name;
     private String a_image;
-    private Data a_createTime;
+    private Date a_createTime;
 
     public Integer getId() {
         return id;
@@ -51,11 +52,11 @@ public class Admin {
         this.a_image = a_image;
     }
 
-    public Data getA_createTime() {
+    public Date getA_createTime() {
         return a_createTime;
     }
 
-    public void setA_createTime(Data a_createTime) {
+    public void setA_createTime(Date a_createTime) {
         this.a_createTime = a_createTime;
     }
 }
