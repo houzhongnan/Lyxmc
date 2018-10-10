@@ -16,4 +16,6 @@ public class StrategyService {
         return strategyDao.getStrategys();
     }
 
+
+
 }
