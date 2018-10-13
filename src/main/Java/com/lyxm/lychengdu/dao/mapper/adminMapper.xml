@@ -15,4 +15,8 @@
     <select id="getAdmins" resultType="Admin">
         select * from admin order by id asc
     </select>
+
+    <delete id="deleteAdmin" parameterType="int">
+        delete from Admin where id=#{id}
+    </delete>
 </mapper>

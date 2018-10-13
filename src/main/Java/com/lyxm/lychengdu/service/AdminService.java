@@ -22,7 +22,6 @@ public class AdminService {
 
     }
 
-
     /*
      * 从数据库的admin表中查找出所有记录（及所有字段）
      * @return
@@ -30,7 +29,6 @@ public class AdminService {
     public List<Admin> getAdmins(){
         return adminDao.getAdmins();
     }
-
 
     /*
      * 根据主键获取对应记录的值
@@ -40,4 +38,9 @@ public class AdminService {
     public Admin getAdmin(Integer id){
         return adminDao.getAdmin(id);
     }
+
+    public void deleteAdmin(Integer adminId) {
+        adminDao.deleteAdmin(adminId);
+    }
+
 }

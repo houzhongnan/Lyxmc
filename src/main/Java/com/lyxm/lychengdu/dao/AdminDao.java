@@ -29,5 +29,6 @@ public interface AdminDao {
 	 */
 	List<Admin> getAdmins();
 
+	int deleteAdmin(Integer id);
 }
 

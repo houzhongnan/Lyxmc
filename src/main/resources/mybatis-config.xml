@@ -9,6 +9,10 @@
 		<typeAlias alias="Admin" type="com.lyxm.lychengdu.model.Admin"/>
 		<typeAlias alias="User" type="com.lyxm.lychengdu.model.User"/>
 		<typeAlias alias="Customer" type="com.lyxm.lychengdu.model.Customer"/>
+		<typeAlias alias="Strategy" type="com.lyxm.lychengdu.model.Strategy"/>
+		<typeAlias alias="Food" type="com.lyxm.lychengdu.model.Food"/>
+		<typeAlias alias="Hot" type="com.lyxm.lychengdu.model.Hot"/>
+		<typeAlias alias="Test" type="com.lyxm.lychengdu.model.Test"/>
 	</typeAliases>
 
 	<mappers>
@@ -16,6 +20,11 @@
 	    <mapper resource="com/lyxm/lychengdu/dao/mapper/adminMapper.xml"/>
 		<mapper resource="com/lyxm/lychengdu/dao/mapper/userMapper.xml"/>
 		<mapper resource="com/lyxm/lychengdu/dao/mapper/customerMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/strategyMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/foodMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/hotMapper.xml"/>
+        <mapper resource="com/lyxm/lychengdu/dao/mapper/testMapper.xml"/>
+
 	</mappers>
 
 
