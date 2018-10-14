@@ -36,4 +36,21 @@ public class AdminDaoTest extends SpringJunitTest {
       // List<Admin> adminList=adminDao.getAdmins();
        System.out.print(adminDao.getAdmin(1).getA_createTime());
     }
+
+    @Test
+    public void  customerTest(){
+        System.out.println(customerDao.getCustomer(1).getC_name());
+    }
+    /*管理员添加测试*/
+    @Test
+    public  void addAdmintest(){
+        Admin admin=new Admin();
+        System.out.print(adminDao.addAdmin(admin));
+    }
+
+    @Test
+    public  void addCustomertest(){
+        Customer customer=new Customer();
+        System.out.print(customerDao.addCustomer(customer));
+    }
 }

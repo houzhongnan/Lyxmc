@@ -48,7 +48,7 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
       </div>
       <div>
         <span>游客管理</span>
-        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">游客列表</a>
+        <a href="<%=basePath%>toCustomer" target="mainFrame" onFocus="this.blur()">游客列表</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">游客日志</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">角色管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>

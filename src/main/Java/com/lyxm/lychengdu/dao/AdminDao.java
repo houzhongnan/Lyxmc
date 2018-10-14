@@ -29,5 +29,12 @@ public interface AdminDao {
 	 */
 	List<Admin> getAdmins();
 
+
+	/*
+	* 添加管理员
+	* */
+	int addAdmin(Admin admin);
+
+	int existAdmin(String a_username);
 }
 

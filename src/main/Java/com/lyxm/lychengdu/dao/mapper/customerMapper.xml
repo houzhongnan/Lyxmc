@@ -8,4 +8,21 @@
     <select id="login"  resultType="Customer">
         select * from customer where c_name=#{c_name} and c_pass=#{c_pass}
     </select>
+<!-- 添加客户-->
+    <insert id="addCustomer">
+        insert into customer(c_id,c_user,c_name,c_sign,c_pass,c_years,c_time)
+        value(null,#{c_user},#{c_name},#{c_sign},#{c_pass},#{c_years},#{c_time})
+    </insert>
+
+    <select id="exitsCustomer" resultType="Customer">
+        select count(c_id) from customer where c_user=#{c_user}
+    </select>
+    <!-- 查询数据库中所有的记录-->
+    <select id="getCustomer" parameterType="int" resultType="Customer">
+        select * from customer where c_id=#{c_id}
+    </select>
+
+    <select id="getCustomers" resultType="Customer">
+        select * from customer order by c_id asc
+    </select>
 </mapper>

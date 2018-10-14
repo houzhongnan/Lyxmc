@@ -17,7 +17,7 @@
 %>
 <html>
 <head>
-    <title>管理员列表</title>
+    <title>游客列表</title>
     <link href="<%=basePath%>jsp/backstage/css/style.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<%=basePath%>jsp/backstage/js/jquery.js"></script>
     <script type="text/javascript">
@@ -50,8 +50,8 @@
         <%--<li><img src="<%=basePath%>jsp/backstage/images/banner/bannertop.jpg"></li>--%>
         <li><img src="<%=basePath%>jsp/backstage/images/banner/sy.png"  ><a href=""><span class="a_text"></span> <b>首页</b></a></li>
         <li class="click">
-            <a href="toAdminadd">
-                <span><img src="<%=basePath%>jsp/backstage/images/banner/add.png" /></span><span class="a_text"><b>添加管理账户</b></span>
+            <a href="toCustomeradd">
+                <span><img src="<%=basePath%>jsp/backstage/images/banner/add.png" /></span><span class="a_text"><b>添加客户</b></span>
             </a>
         </li>
         </div>
@@ -62,19 +62,23 @@
 <thead>
 <tr>
     <th style="width: 5%"><input name="" type="checkbox" value="" checked="checked"></th>
-    <th style="width: 30%">账户名</th>
-    <th style="width: 25%">昵称</th>
-    <th style="width: 25%">创建时间</th>
+    <th style="width: 16%">游客账户名</th>
+    <th style="width: 16%">游客昵称</th>
+    <th style="width: 16%">游客签名</th>
+    <th style="width: 16%">出生日期</th>
+    <th style="width: 16%">创建时间</th>
     <th>选项</th>
 </tr>
 </thead>
     <tbody>
-   <c:forEach var="admin" items="${requestScope.list}">
+   <c:forEach var="customer" items="${requestScope.list}">
 <tr>
     <td ><input name="" type="checkbox" value="" /></td>
-    <td >${admin.a_username}</td>
-    <td >${admin.a_name}</td>
-    <td><fmt:formatDate value="${admin.a_createTime}" pattern="yyyy年MM月dd日 HH:mm"/></td>
+    <td >${customer.c_user}</td>
+    <td >${customer.c_name}</td>
+    <td >${customer.c_sign}</td>
+    <td ><fmt:formatDate value="${customer.c_years}" pattern="yyyy年MM月dd日"/></td>
+    <td><fmt:formatDate value="${customer.c_time}" pattern="yyyy年MM月dd日 HH:mm"/></td>
     <td><a href="" class="tablelink">编辑</a>   <a href="" class="tablelink">删除</a> </td>
 </tr>
 
