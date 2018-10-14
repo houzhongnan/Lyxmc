@@ -1,3 +1,4 @@
+/*
 package com.lyxm.lychengdu.web.Reception.strategyManage;
 
 import com.lyxm.lychengdu.model.Food;
@@ -106,4 +107,4 @@ public class StrategyManageControlle {
         request.setAttribute("index",index);
         return "test.jsp";
     }
-}
+}*/
