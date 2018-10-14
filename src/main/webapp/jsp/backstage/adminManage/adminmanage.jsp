@@ -75,7 +75,7 @@
     <td >${admin.a_username}</td>
     <td >${admin.a_name}</td>
     <td><fmt:formatDate value="${admin.a_createTime}" pattern="yyyy年MM月dd日 HH:mm"/></td>
-    <td><a href="" class="tablelink">编辑</a>   <a href="" class="tablelink">删除</a> </td>
+    <td><a href="" class="tablelink">编辑</a>   <a href="<%=basePath%>backstage/adminManage/doDeleteAdmin?id=${admin.id}" class="tablelink">删除</a> </td>
 </tr>
 
     </c:forEach>

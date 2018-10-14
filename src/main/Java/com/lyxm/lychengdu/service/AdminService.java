@@ -61,4 +61,9 @@ public class AdminService {
     public Admin getAdmin(Integer id){
         return adminDao.getAdmin(id);
     }
+
+    public void deleteAdmin(Integer adminId) {
+        adminDao.deleteAdmin(adminId);
+    }
+
 }

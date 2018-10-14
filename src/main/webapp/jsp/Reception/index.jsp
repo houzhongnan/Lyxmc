@@ -42,7 +42,6 @@
                             //根据服务端返回来的值，判断登录是否成功
                             if(data=="ok"){
                                 alert("注册成功！");
-
                                 //清空kindeditor内容
                                 KindEditor.html("#content", "");
                             }else{
@@ -299,28 +298,28 @@
 								</div>
 								<!--今日推荐登录注册的小模块结束-->
 							</li>
+							<c:forEach var="strategyOfEach" items="${requestScope.list2}">
+							<li>
+								<div data-type="video" class="item">
+									<div class="img">
 
-								<c:forEach var="strategyOfEach" items="${requestScope.list}">
-								<li>
-									<div data-type="video" class="item">
-										<div class="img">
+										<a data-bn-ipg="index-guess-video-p1" href="#" target="_blank">
+											<img src="${strategyOfEach.s_image}" alt=""/>
+											<div class="tag"><span class="bt">${strategyOfEach.s_place}</span></div>
+										</a>
+									</div>
+									<div class="info">
 
-											<a data-bn-ipg="index-guess-video-p1" href="#" target="_blank">
-												<img src="${strategyOfEach.s_image}" alt=""/>
-												<div class="tag"><span class="bt">${strategyOfEach.s_place}</span></div>
-											</a>
-										</div>
-										<div class="info">
+										<a data-bn-ipg="index-guess-video-p1" href="#" target="_blank">
+											<div class="subtitle">
+												<p>${strategyOfEach.s_name}</p>
+											</div>
+											<div class="bottom"><span class="fr">${strategyOfEach.s_name}</span><span class="f14">${strategyOfEach.s_name}</span></div>
+										</a>
+									</div>
+								</div></c:forEach>
+							</li>
 
-											<a data-bn-ipg="index-guess-video-p1" href="#" target="_blank">
-												<div class="subtitle">
-													<p>${strategyOfEach.s_name}</p>
-												</div>
-												<div class="bottom"><span class="fr">${strategyOfEach.s_name}</span><span class="f14">${strategyOfEach.s_name}</span></div>
-											</a>
-										</div>
-									</div></c:forEach>
-								</li>
 						</ul>
 					</div>
 
@@ -346,69 +345,23 @@
 					<!--第一行-->
 					<div class="bd">
 						<ul class="clearfix">
+							<c:forEach var="foodOfEach" items="${requestScope.list3}">
 							<li class="item">
 								<a href="#" target="_blank">
 									<div class="image">
-										<img src="#" height="135" width="220">
+										<img src="${foodOfEach.f_image}" height="135" width="220">
 									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">川北凉粉</h3>
+									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">${foodOfEach.f_name}</h3>
 									<div class="price"><strong>[南充高坪区]</strong></div>
 								</a>
 							</li>
-							<li class="item">
-								<a href="#" target="_blank">
-									<div class="image">
-										<img src="#" height="135" width="220">
-									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">韩包子 </h3>
-									<div class="price"><strong>[成都温江]</strong><em></em></div>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#" target="_blank">
-									<div class="image">
-										<img src="#" height="135" width="220">
-									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">韩包子 </h3>
-									<div class="price"><strong>[成都温江]</strong><em></em></div>
-								</a>
-							</li>
+							</c:forEach>
+
 						</ul>
 
 					</div>
 					<!--第二行-->
-					<div class="bd">
-						<ul class="clearfix">
-							<li class="item">
-								<a href="#" target="_blank">
-									<div class="image">
-										<img src="#" height="135" width="220">
-									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">韩包子 </h3>
-									<div class="price"><strong>[成都温江]</strong><em></em></div>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#" target="_blank">
-									<div class="image">
-										<img src="#" height="135" width="220">
-									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">韩包子 </h3>
-									<div class="price"><strong>[成都温江]</strong><em></em></div>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#" target="_blank">
-									<div class="image">
-										<img src="#" height="135" width="220">
-									</div>
-									<h3 style="overflow: hidden; height: 40px; margin-top: 5px;">韩包子 </h3>
-									<div class="price"><strong>[成都温江]</strong><em></em></div>
-								</a>
-							</li>
-						</ul>
-
-					</div>
+					
 				</div>
 				<!--小吃爆款结束-->
 
@@ -536,17 +489,19 @@
 
 										</a>
 									</div>
+
 									<div class="tn-wrapper">
-										<dl>
+                                       <c:forEach var="hotOfEach" items="${requestScope.list4}">
+                                        <dl>
 											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
+												<a href="#"target="_blank">${hotOfEach.h_name}</a>
 											</dt>
 											<dd>
 												<a href="#" target="_blank">
 													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
 												</a>
 											</dd>
-										</dl>
+                                        </dl>
 										<div class="tn-extra">
 												<span class="tn-ding">
                         <a class="btn-ding" href="#"rel="nofollow"></a>
@@ -561,191 +516,12 @@
                         </a>
                     </span>
 											<span class="tn-nums"><i></i>414065/968</span>
-											<!--浏览的人数-->
-										</div>
-									</div>
-								</div>
-								<div class="tn-item clearfix">
-									<div class="tn-image">
-										<a href="#" target="_blank">
-											<img class="" data-src="http://p1-q.mafengwo.net/s11/M00/4D/53/wKgBEFtm7waAEtb2ABBYhxJlpLs28.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://p1-q.mafengwo.net/s11/M00/4D/53/wKgBEFtm7waAEtb2ABBYhxJlpLs28.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://p1-q.mafengwo.net/s11/M00/4D/53/wKgBEFtm7waAEtb2ABBYhxJlpLs28.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
 
-										</a>
-									</div>
-									<div class="tn-wrapper">
-										<dl>
-											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
-											</dt>
-											<dd>
-												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
-												</a>
-											</dd>
-										</dl>
-										<div class="tn-extra">
-												<span class="tn-ding">
-                        <a class="btn-ding" href="#"rel="nofollow"></a>
-                        <em id="topvote8058963">8267</em><!--点赞的人数-->
-                    </span>
-											<span class="tn-place"><i></i><a href="#"data-type="2">乐山</a>，by</span>
-											<!--地点和名字-->
-											<span class="tn-user">
-                        <a href="#"rel="nofollow">
-                            <img src="http://p1-q.mafengwo.net/s9/M00/74/B8/wKgBs1gJ8D6AAeuJAATM36oPiXg06.jpeg?imageMogr2%2Fthumbnail%2F%2116x16r%2Fgravity%2FCenter%2Fcrop%2F%2116x16%2Fquality%2F90">
-                            登录编写的用户名
-                        </a>
-                    </span>
-											<span class="tn-nums"><i></i>414065/968</span>
 											<!--浏览的人数-->
-										</div>
-									</div>
-								</div>
-								<div class="tn-item clearfix">
-									<div class="tn-image">
-										<a href="#" target="_blank">
-											<img class="" data-src="http://n3-q.mafengwo.net/s12/M00/97/78/wKgED1uKdA-AevsGAAiGTal0j8A89.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://n3-q.mafengwo.net/s12/M00/97/78/wKgED1uKdA-AevsGAAiGTal0j8A89.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://n3-q.mafengwo.net/s12/M00/97/78/wKgED1uKdA-AevsGAAiGTal0j8A89.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
-
-										</a>
-									</div>
-									<div class="tn-wrapper">
-										<dl>
-											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
-											</dt>
-											<dd>
-												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
-												</a>
-											</dd>
-										</dl>
-										<div class="tn-extra">
-												<span class="tn-ding">
-                        <a class="btn-ding" href="#"rel="nofollow"></a>
-                        <em id="topvote8058963">8267</em><!--点赞的人数-->
-                    </span>
-											<span class="tn-place"><i></i><a href="#"data-type="2">乐山</a>，by</span>
-											<!--地点和名字-->
-											<span class="tn-user">
-                        <a href="#"rel="nofollow">
-                            <img src="http://p1-q.mafengwo.net/s9/M00/74/B8/wKgBs1gJ8D6AAeuJAATM36oPiXg06.jpeg?imageMogr2%2Fthumbnail%2F%2116x16r%2Fgravity%2FCenter%2Fcrop%2F%2116x16%2Fquality%2F90">
-                            登录编写的用户名
-                        </a>
-                    </span>
-											<span class="tn-nums"><i></i>414065/968</span>
-											<!--浏览的人数-->
-										</div>
-									</div>
-								</div>
-								<div class="tn-item clearfix">
-									<div class="tn-image">
-										<a href="#" target="_blank">
-											<img class="" data-src="http://b3-q.mafengwo.net/s11/M00/5E/44/wKgBEFt4Jr2AHmT5AAoZPfM1n5c66.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://b3-q.mafengwo.net/s11/M00/5E/44/wKgBEFt4Jr2AHmT5AAoZPfM1n5c66.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://b3-q.mafengwo.net/s11/M00/5E/44/wKgBEFt4Jr2AHmT5AAoZPfM1n5c66.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
-
-										</a>
-									</div>
-									<div class="tn-wrapper">
-										<dl>
-											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
-											</dt>
-											<dd>
-												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
-												</a>
-											</dd>
-										</dl>
-										<div class="tn-extra">
-												<span class="tn-ding">
-                        <a class="btn-ding" href="#"rel="nofollow"></a>
-                        <em id="topvote8058963">8267</em><!--点赞的人数-->
-                    </span>
-											<span class="tn-place"><i></i><a href="#"data-type="2">乐山</a>，by</span>
-											<!--地点和名字-->
-											<span class="tn-user">
-                        <a href="#"rel="nofollow">
-                            <img src="http://p1-q.mafengwo.net/s9/M00/74/B8/wKgBs1gJ8D6AAeuJAATM36oPiXg06.jpeg?imageMogr2%2Fthumbnail%2F%2116x16r%2Fgravity%2FCenter%2Fcrop%2F%2116x16%2Fquality%2F90">
-                            登录编写的用户名
-                        </a>
-                    </span>
-											<span class="tn-nums"><i></i>414065/968</span>
-											<!--浏览的人数-->
-										</div>
-									</div>
-								</div>
-								<div class="tn-item clearfix">
-									<div class="tn-image">
-										<a href="#" target="_blank">
-											<img class="" data-src="http://n3-q.mafengwo.net/s12/M00/57/44/wKgED1uXo3mAY5rXABR629NFgUM05.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://n3-q.mafengwo.net/s12/M00/57/44/wKgED1uXo3mAY5rXABR629NFgUM05.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://n3-q.mafengwo.net/s12/M00/57/44/wKgED1uXo3mAY5rXABR629NFgUM05.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
-
-										</a>
-									</div>
-									<div class="tn-wrapper">
-										<dl>
-											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
-											</dt>
-											<dd>
-												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
-												</a>
-											</dd>
-										</dl>
-										<div class="tn-extra">
-												<span class="tn-ding">
-                        <a class="btn-ding" href="#"rel="nofollow"></a>
-                        <em id="topvote8058963">8267</em><!--点赞的人数-->
-                    </span>
-											<span class="tn-place"><i></i><a href="#"data-type="2">乐山</a>，by</span>
-											<!--地点和名字-->
-											<span class="tn-user">
-                        <a href="#"rel="nofollow">
-                            <img src="http://p1-q.mafengwo.net/s9/M00/74/B8/wKgBs1gJ8D6AAeuJAATM36oPiXg06.jpeg?imageMogr2%2Fthumbnail%2F%2116x16r%2Fgravity%2FCenter%2Fcrop%2F%2116x16%2Fquality%2F90">
-                            登录编写的用户名
-                        </a>
-                    </span>
-											<span class="tn-nums"><i></i>414065/968</span>
-											<!--浏览的人数-->
-										</div>
-									</div>
+                                        </div></c:forEach>
+                                    </div>
 								</div>
 
-								<div class="tn-item clearfix">
-									<div class="tn-image">
-										<a href="#" target="_blank">
-											<img class="" data-src="http://n1-q.mafengwo.net/s12/M00/64/3D/wKgED1uXsNKAfne0AA9fVPQFTf854.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://n1-q.mafengwo.net/s12/M00/64/3D/wKgED1uXsNKAfne0AA9fVPQFTf854.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://n1-q.mafengwo.net/s12/M00/64/3D/wKgED1uXsNKAfne0AA9fVPQFTf854.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
-
-										</a>
-									</div>
-									<div class="tn-wrapper">
-										<dl>
-											<dt>
-												<a href="#"target="_blank">宽窄巷子</a>
-											</dt>
-											<dd>
-												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
-												</a>
-											</dd>
-										</dl>
-										<div class="tn-extra">
-												<span class="tn-ding">
-                        <a class="btn-ding" href="#"rel="nofollow"></a>
-                        <em id="topvote8058963">8267</em><!--点赞的人数-->
-                    </span>
-											<span class="tn-place"><i></i><a href="#"data-type="2">乐山</a>，by</span>
-											<!--地点和名字-->
-											<span class="tn-user">
-                        <a href="#"rel="nofollow">
-                            <img src="http://p1-q.mafengwo.net/s9/M00/74/B8/wKgBs1gJ8D6AAeuJAATM36oPiXg06.jpeg?imageMogr2%2Fthumbnail%2F%2116x16r%2Fgravity%2FCenter%2Fcrop%2F%2116x16%2Fquality%2F90">
-                            登录编写的用户名
-                        </a>
-                    </span>
-											<span class="tn-nums"><i></i>414065/968</span>
-											<!--浏览的人数-->
-										</div>
-									</div>
-								</div>
 
 							</div>
 							<!--分页开始-->
@@ -995,7 +771,6 @@
 
 					<style>
 						/* 微信弹层 */
-
 						.wx-mfw-pop {
 							width: 420px;
 							height: 285px;
@@ -1005,7 +780,6 @@
 							color: #666;
 							line-height: 1.8em;
 						}
-
 						.wx-mfw-pop img {
 							margin-top: 10px;
 						}

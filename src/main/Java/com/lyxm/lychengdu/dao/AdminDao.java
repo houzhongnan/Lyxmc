@@ -36,5 +36,6 @@ public interface AdminDao {
 	int addAdmin(Admin admin);
 
 	int existAdmin(String a_username);
+	int deleteAdmin(Integer id);
 }
 
