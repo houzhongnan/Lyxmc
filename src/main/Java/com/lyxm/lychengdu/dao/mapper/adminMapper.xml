@@ -27,7 +27,5 @@
         select count(id) from admin where a_username=#{a_username}
     </select>
 
-    <delete id="deleteAdmin" parameterType="int">
-        delete from Admin where id=#{id}
-    </delete>
+
 </mapper>

@@ -41,7 +41,7 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
       </div>
       <div>
         <span>管理员管理</span>
-        <a href="<%=basePath%>backstage/adminManage/toManageAdmin" target="mainFrame" onFocus="this.blur()">管理员列表</a>
+        <a href="<%=basePath%>toAdminmanage" target="mainFrame" onFocus="this.blur()">管理员列表</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">社区公告</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">消息管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>

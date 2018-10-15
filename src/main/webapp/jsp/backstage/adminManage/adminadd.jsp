@@ -56,7 +56,7 @@
 
 <div class="formbody">
     <div class="formtitle"></div>
-    <form action="doAdminAdd" method="post">
+    <form action="doAdminadd" method="post">
         <ul class="forminfo">
             <li><label>帐户名：</label><input name="a_username" type="text" class="dfinput" value="" /></li><br/>
             <li><label>昵称：</label><input name="a_name" type="text" class="dfinput" value=""/></li>
