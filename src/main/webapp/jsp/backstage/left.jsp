@@ -41,14 +41,15 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
       </div>
       <div>
         <span>管理员管理</span>
-        <a href="<%=basePath%>toAdminmanage" target="mainFrame" onFocus="this.blur()">管理员列表</a>
+        <a href="<%=basePath%>backstage/adminManage/toManageAdmin" target="mainFrame" onFocus="this.blur()">管理员列表</a>
+        <a href="adminManage/adminupdatepassword.jsp" target="mainFrame" onFocus="this.blur()">修改密码</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">社区公告</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">消息管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>
       </div>
       <div>
         <span>游客管理</span>
-        <a href="<%=basePath%>toCustomer" target="mainFrame" onFocus="this.blur()">游客列表</a>
+        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">游客列表</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">游客日志</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">角色管理</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">自定义权限</a>

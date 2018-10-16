@@ -50,7 +50,7 @@
         <%--<li><img src="<%=basePath%>jsp/backstage/images/banner/bannertop.jpg"></li>--%>
         <li><img src="<%=basePath%>jsp/backstage/images/banner/sy.png"  ><a href=""><span class="a_text"></span> <b>首页</b></a></li>
         <li class="click">
-            <a href="toAdminadd">
+            <a href="">
                 <span><img src="<%=basePath%>jsp/backstage/images/banner/add.png" /></span><span class="a_text"><b>添加管理账户</b></span>
             </a>
         </li>
@@ -75,7 +75,7 @@
     <td >${admin.a_username}</td>
     <td >${admin.a_name}</td>
     <td><fmt:formatDate value="${admin.a_createTime}" pattern="yyyy年MM月dd日 HH:mm"/></td>
-    <td><a href="" class="tablelink">编辑</a>   <a href="<%=basePath%>backstage/adminManage/doDeleteAdmin?id=${admin.id}" class="tablelink">删除</a> </td>
+    <td><a href="<%=basePath%>backstage/adminManage/toUpdateAdmin?id=${admin.id}" class="tablelink">编辑</a>   <a href="<%=basePath%>backstage/adminManage/doDeleteAdmin?id=${admin.id}" class="tablelink">删除</a> </td>
 </tr>
 
     </c:forEach>

@@ -1,4 +1,4 @@
-package dao;
+/*package dao;
 
 import com.lyxm.lychengdu.dao.AdminDao;
 import com.lyxm.lychengdu.dao.CustomerDao;
@@ -15,22 +15,22 @@ public class AdminDaoTest extends SpringJunitTest {
     private CustomerDao customerDao;
     @Resource
     private AdminDao adminDao;
-    /*
+    *//*
     对login方法进行测试
-     */
+     *//*
     @Test
     public void loginTest(){
         Customer customer=customerDao.login("user","123456");
         System.out.println(customer.getC_name());
     }
-    /*后台登录login尝试*/
+    *//*后台登录login尝试*//*
     @Test
     public void loginTest1(){
         Admin admin=adminDao.login("user","123456");
         System.out.println(admin.getA_name());
     }
 
-    /*获取数据库测试*/
+    *//*获取数据库测试*//*
     @Test
     public  void adminmanageTest(){
       // List<Admin> adminList=adminDao.getAdmins();
@@ -41,7 +41,7 @@ public class AdminDaoTest extends SpringJunitTest {
     public void  customerTest(){
         System.out.println(customerDao.getCustomer(1).getC_name());
     }
-    /*管理员添加测试*/
+    *//*管理员添加测试*//*
     @Test
     public  void addAdmintest(){
         Admin admin=new Admin();
@@ -53,4 +53,4 @@ public class AdminDaoTest extends SpringJunitTest {
         Customer customer=new Customer();
         System.out.print(customerDao.addCustomer(customer));
     }
-}
+}*/

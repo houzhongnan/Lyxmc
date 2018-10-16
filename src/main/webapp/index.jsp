@@ -15,7 +15,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href="Reception/index"> <h1>旅游网页前台</h1></a>
+<a href="Reception/strategyManage/toManageStrategy"> <h1>旅游网页前台</h1></a>
 <a href="<%=basePath%>jsp/backstage/login.jsp"><h1>旅游网页后台</h1></a>
 <a href="<%=basePath%>Reception/index"><h1>旅游网页后台</h1></a>
 </body>
