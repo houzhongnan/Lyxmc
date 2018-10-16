@@ -37,6 +37,7 @@ public class Customercontroller {
         }else if(customerService.eixtsCustomer(c_user)){
             request.setAttribute("mymessage", "编辑失败：账户名重复，请修改账户名！");
         }else{
+            System.out.println("212121212");
             System.out.println(customerService.eixtsCustomer("c_user"+11));
             customerService.addCustomer(c_user,c_name);
             request.setAttribute("mymessage", "编辑成功：");

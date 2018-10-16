@@ -14,7 +14,7 @@
         value(null,#{c_user},#{c_name},#{c_sign},#{c_pass},#{c_years},#{c_time})
     </insert>
 
-    <select id="exitsCustomer" resultType="Customer">
+    <select id="exitsCustomer" resultType="int">
         select count(c_id) from customer where c_user=#{c_user}
     </select>
     <!-- 查询数据库中所有的记录-->

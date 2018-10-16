@@ -20,7 +20,7 @@ public interface CustomerDao {
 	/*添加客户*/
 	int addCustomer(Customer customer);
 
-	int exitsCustomer(String c_name);
+	int exitsCustomer(String c_user);
 
 	/*
 	 * 根据主键获取对应记录的值

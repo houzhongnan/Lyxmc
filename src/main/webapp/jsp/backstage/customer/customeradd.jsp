@@ -20,9 +20,8 @@
     <link href="<%=basePath%>jsp/backstage/css/style1.css " type="text/css" rel="stylesheet" />
     <link href="<%=basePath%>jsp/backstage/css/style.css " type="text/css" rel="stylesheet" />
  <script type="text/javascript" src="jsp/backstage/js/jquery.js"></script>
-    <script type="text/javascript">
-        var message='${requestScope.myMessage}';
-        //如果没有收到服务端发来的信息，那么就不弹出对话框
+    <script>
+        var message='${requestScope.mymessage}';
         if(message!=''){
             alert(message);
         }
@@ -35,11 +34,11 @@
         }
          */
 
-        $(document).ready(function(){
+       /* $(document).ready(function(){
 
 
 
-        });
+        });*/
     </script>
 </head>
 <body>
@@ -56,12 +55,14 @@
 
 <div class="formbody">
     <div class="formtitle"></div>
-    <form action="toCustomeradd" method="post">
+    <form action="doCustomeradd" method="post">
         <ul class="forminfo">
             <li><label>游客帐户名：</label><input name="c_user" type="text" class="dfinput" value="" /></li><br/>
             <li><label>昵称：</label><input name="c_name" type="text" class="dfinput" value=""/></li>
-            <li><label>出生年月：</label><input name="c_years" type="text" class="dfinput" value=""/></li>
-            <li><label>个性签名：</label><input name="c_sign" type="text" class="dfinput" value=""/></li>
+            <li><label>出生年月：</label><input name="c_years" type="date" class="dfinput" value=""/></li>
+
+            <li><label>密码：</label><input name="c_pass" type="text" class="dfinput" value=""/></li>
+            <li><label>个性签名：</label><textarea name="c_sign" type="text" class="dfinput" value="" style="height: 50px;"></textarea></li>
             <li><label>&nbsp;</label><input name="btn" type="submit" class="btn" value="确认添加"/></li>
 
         </ul>
