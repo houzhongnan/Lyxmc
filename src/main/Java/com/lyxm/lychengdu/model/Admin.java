@@ -59,4 +59,5 @@ public class Admin {
     public void setA_createTime(Date a_createTime) {
         this.a_createTime = a_createTime;
     }
+
 }

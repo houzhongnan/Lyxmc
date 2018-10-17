@@ -35,17 +35,18 @@ public class AdminManageController {
 
     @RequestMapping(value = "/doAdminadd",method = RequestMethod.POST)
 
-    public String doAdminadd(String a_username,String a_name,HttpServletRequest request){
+    public String doAdminadd(String a_username,String a_name,String a_password,HttpServletRequest request){
+
         if(a_username.equals("")){
-            request.setAttribute("mymessage", "编辑失败：账户名不可以为空");
+            request.setAttribute("mymessage", "添加失败：账户名不可以为空");
         }else if(a_name.equals("")){
-            request.setAttribute("mymessage", "编辑失败：网名不可以为空");
+            request.setAttribute("mymessage", "添加失败：网名不可以为空");
         }else if(adminService.exitAdmin(a_username)){
-            request.setAttribute("mymessage", "编辑失败：账户名重复，请修改账户名！");
+            request.setAttribute("mymessage", "添加失败：账户名重复，请修改账户名！");
         }else{
             System.out.println(adminService.exitAdmin("user"+11));
-          adminService.addAdmin(a_username,a_name);
-            request.setAttribute("mymessage", "编辑成功：");
+          adminService.addAdmin(a_username,a_name,a_password);
+            request.setAttribute("mymessage", "添加成功：");
         }
         return "backstage/adminManage/adminadd.jsp";
     }

@@ -10,6 +10,9 @@ public class Customer {
     private Date c_time;
     private  Date c_years;
 private  String c_sign;
+    private  String e_mail;
+    private int State;//是否激活
+    private  String code;
 
     public String getC_sign() {
         return c_sign;
@@ -65,5 +68,29 @@ private  String c_sign;
 
     public void setC_years(Date c_years) {
         this.c_years = c_years;
+    }
+
+    public String getE_mail() {
+        return e_mail;
+    }
+
+    public void setE_mail(String e_mail) {
+        this.e_mail = e_mail;
+    }
+
+    public int getState() {
+        return State;
+    }
+
+    public void setState(int state) {
+        State = state;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }

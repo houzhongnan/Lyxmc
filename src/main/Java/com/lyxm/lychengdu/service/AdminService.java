@@ -25,11 +25,11 @@ public class AdminService {
 /**
  * 添加管理员
  */
-    public  void addAdmin(String a_username,String a_name){
+    public  void addAdmin(String a_username,String a_name,String a_password){
         Admin admin=new Admin();
         admin.setA_username(a_username);
         admin.setA_name(a_name);
-        admin.setA_password("123456");
+        admin.setA_password(a_password);
         admin.setA_image(" a_image");
        admin.setA_createTime(Calendar.getInstance().getTime());
        adminDao.addAdmin(admin);
