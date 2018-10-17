@@ -5,6 +5,7 @@ import com.lyxm.lychengdu.service.CustomerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -37,7 +38,6 @@ public class Customercontroller {
         }else if(customerService.eixtsCustomer(c_user)){
             request.setAttribute("mymessage", "添加失败：账户名重复，请修改账户名！");
         }else{
-            System.out.println("212121212");
             System.out.println(customerService.eixtsCustomer("c_user"+11));
             customerService.addCustomer(c_user,c_name);
             request.setAttribute("mymessage", "添加成功：");
@@ -48,5 +48,28 @@ public class Customercontroller {
    @RequestMapping(value = "/toCustomeradd",method = RequestMethod.GET)
     public String toCustomeradd(){
         return "backstage/customer/customeradd.jsp";
+    }
+
+    @RequestMapping(value="/doDeleteCustomer",method = RequestMethod.GET)
+    public String doDeleteCustomer(Integer c_id ,HttpServletRequest request,HttpSession session){
+       customerService.deleteCustomer(c_id);
+        return "backstage/customer/customerdelete.jsp";
+    }
+
+    @RequestMapping(value="/toUpdateCustomer",method = RequestMethod.GET)
+    public String toUpdateCustomer(Integer c_id ,HttpServletRequest request){
+        Customer customer=customerService.getCustomer(c_id);
+        request.setAttribute("customer", customer);
+        return "backstage/customer/customerupdate.jsp";
+    }
+
+    @ResponseBody
+    @RequestMapping(value="/DoUpdateCustomer",method=RequestMethod.POST)
+    public String DoUpdateCustomer(Customer customer,HttpServletRequest request) {
+        String i;
+        i = "ok";
+        System.out.println("662626");
+        customerService.updateCustomer(customer);
+        return i;
     }
 }

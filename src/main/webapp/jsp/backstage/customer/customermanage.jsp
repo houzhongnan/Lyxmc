@@ -79,7 +79,7 @@
     <td >${customer.c_sign}</td>
     <td ><fmt:formatDate value="${customer.c_years}" pattern="yyyy年MM月dd日"/></td>
     <td><fmt:formatDate value="${customer.c_time}" pattern="yyyy年MM月dd日 HH:mm"/></td>
-    <td><a href="" class="tablelink">编辑</a>   <a href="" class="tablelink">删除</a> </td>
+    <td><a href="<%=basePath%>toUpdateCustomer?c_id=${customer.c_id}" class="tablelink">编辑</a>   <a href="<%=basePath%>doDeleteCustomer?c_id=${customer.c_id}" class="tablelink">删除</a> </td>
 </tr>
 
     </c:forEach>

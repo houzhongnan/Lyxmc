@@ -20,7 +20,7 @@ public interface CustomerDao {
 	/*添加客户*/
 	int addCustomer(Customer customer);
 
-	int exitsCustomer(String c_user);
+	int exitsCustomer(String c_name);
 
 	/*
 	 * 根据主键获取对应记录的值
@@ -34,6 +34,10 @@ public interface CustomerDao {
 	 * 查询管理账户表的所有记录
 	 */
 	List<Customer> getCustomers();
+
+	int deleteCustomer(Integer c_id);
+
+	int updateCustomer(Customer customer);
 
 
 }

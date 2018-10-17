@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2018/10/1
-  Time: 19:36
+  User: 徐林
+  Date: 2018/10/16
+  Time: 16:52
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -15,8 +15,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="Reception/strategyManage/toManageStrategy"> <h1>旅游网页前台</h1></a>
-<a href="<%=basePath%>jsp/backstage/login.jsp"><h1>旅游网页后台</h1></a>
-<a href="<%=basePath%>Reception/index"><h1>旅游网页后台</h1></a>
+<%response.sendRedirect(basePath+"toCustomer"); %>
 </body>
 </html>

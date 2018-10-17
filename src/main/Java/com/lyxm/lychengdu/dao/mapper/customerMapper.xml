@@ -8,6 +8,7 @@
     <select id="login"  resultType="Customer">
         select * from customer where c_name=#{c_name} and c_pass=#{c_pass}
     </select>
+
 <!-- 添加客户-->
     <insert id="addCustomer">
         insert into customer(c_id,c_user,c_name,c_sign,c_pass,c_years,c_time,e_mail，State，code)
@@ -25,4 +26,12 @@
     <select id="getCustomers" resultType="Customer">
         select * from customer order by c_id asc
     </select>
+
+    <delete id="deleteCustomer" parameterType="int">
+        delete from customer where c_id=#{c_id}
+    </delete>
+
+    <update id="updateCustomer">
+        update Customer set c_user=#{c_user},c_name=#{c_name},c_sign=#{c_sign},c_pass=#{c_pass} where c_id=#{c_id}
+    </update>
 </mapper>

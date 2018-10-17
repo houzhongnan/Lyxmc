@@ -51,6 +51,14 @@
                 }
             });
         });
+
+
+        var mesg='${requestScope.mesg}';
+        if(mesg!=''){
+            alert(mesg);
+        }
+
+
 	</script>
 </head>
 <script type="text/javascript" src="<%=basePath %>jsp/Reception/js/jquery-1.12.4.js"></script>
@@ -481,24 +489,24 @@
 
 						<!--文本栏目开始-->
 						<div id="_j_tn_content">
-							<div class="tn-list">
+							<div class="tn-list"><c:forEach var="hotOfEach" items="${requestScope.list4}">
 								<div class="tn-item clearfix">
 									<div class="tn-image">
 										<a href="#" target="_blank">
-											<img class="" data-src="http://p1-q.mafengwo.net/s10/M00/FA/0E/wKgBZ1oKXw-AIhmkABHjFeYE6-Q28.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" data-rt-src="http://p1-q.mafengwo.net/s10/M00/FA/0E/wKgBZ1oKXw-AIhmkABHjFeYE6-Q28.jpeg?imageMogr2%2Fthumbnail%2F%21440x300r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21440x300%2Fquality%2F90" src="http://p1-q.mafengwo.net/s10/M00/FA/0E/wKgBZ1oKXw-AIhmkABHjFeYE6-Q28.jpeg?imageMogr2%2Fthumbnail%2F%21220x150r%2Fstrip%2Fgravity%2FCenter%2Fcrop%2F%21220x150%2Fquality%2F90" style="display: inline;">
+											<img class="" data-src="" src="${hotOfEach.h_image}" style="display: inline;">
 
 										</a>
 									</div>
 
 									<div class="tn-wrapper">
-                                       <c:forEach var="hotOfEach" items="${requestScope.list4}">
+
                                         <dl>
 											<dt>
 												<a href="#"target="_blank">${hotOfEach.h_name}</a>
 											</dt>
 											<dd>
 												<a href="#" target="_blank">
-													宽窄巷子由宽巷子、窄巷子和井巷子组成，是成都现存较成规模的清朝古街道。 闲在宽巷子：宽巷子集中了整个街区最多最完整的老建筑，多数的旧时门脸都保存完好。在这里可以品碗茶，吃正宗川菜，体验老成都的风土人情...
+                                                        ${hotOfEach.h_introduce}
 												</a>
 											</dd>
                                         </dl>
@@ -518,26 +526,22 @@
 											<span class="tn-nums"><i></i>414065/968</span>
 
 											<!--浏览的人数-->
-                                        </div></c:forEach>
+                                        </div>
                                     </div>
-								</div>
+                                </div></c:forEach>
 
 
 							</div>
 							<!--分页开始-->
 							<div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0">
-								<span class="count">共207页 / 2482条</span>
+								<span class="count">共${size}条记录，当前正显示第${index}页</span>
+								<a class="pg-next _j_pageitem" href="<%=basePath%>Reception/strategyManage/toManageStrategy?index=${index-1}" rel="nofollow">上一页 <<</a>
+							<!--	<span class="pg-current">1</span> -->
+                                <c:forEach var="listOfEach" end="${requestScope.pagecount}" step="1" begin="1">
+								<a class="pi _j_pageitem" href="<%=basePath%>Reception/strategyManage/toManageStrategy?index=${listOfEach}" rel="nofollow">${listOfEach}</a>
+                                </c:forEach>
 
-								<span class="pg-current">1</span>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">2</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">3</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">4</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">5</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">6</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">7</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">8</a>
-								<a class="pi _j_pageitem" href="#" rel="nofollow">9</a>
-								<a class="pg-next _j_pageitem" href="#" rel="nofollow">下一页 &gt;&gt;</a>
+								<a class="pg-next _j_pageitem" href="<%=basePath%>Reception/strategyManage/toManageStrategy?index=${index+1}" rel="nofollow">下一页 &gt;&gt;</a>
 							</div>
 							<!--分页结束-->
 						</div>

@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="LyChengDu:war">
+  <artifact type="war" name="Lyxm:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="ljy_maven_github_ssm.war">
-      <element id="artifact" artifact-name="LyChengDu:war exploded" />
+      <element id="artifact" artifact-name="Lyxm:war exploded" />
     </root>
   </artifact>
 </component>

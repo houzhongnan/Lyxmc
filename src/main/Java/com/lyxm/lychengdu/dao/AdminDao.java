@@ -29,13 +29,10 @@ public interface AdminDao {
 	 */
 	List<Admin> getAdmins();
 
-
-	/*
-	* 添加管理员
-	* */
-	int addAdmin(Admin admin);
-
-	int existAdmin(String a_username);
 	int deleteAdmin(Integer id);
+
+	int updateAdmin(Admin admin);
+
+	int updatePassword(@Param(value="id")Integer id, @Param(value="a_password")String newPass);
 }
 

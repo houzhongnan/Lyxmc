@@ -25,11 +25,11 @@ public class AdminService {
 /**
  * 添加管理员
  */
-    public  void addAdmin(String a_username,String a_name,String a_password){
+    public  void addAdmin(String a_username,String a_name){
         Admin admin=new Admin();
         admin.setA_username(a_username);
         admin.setA_name(a_name);
-        admin.setA_password(a_password);
+        admin.setA_password("123456");
         admin.setA_image(" a_image");
        admin.setA_createTime(Calendar.getInstance().getTime());
        adminDao.addAdmin(admin);
@@ -64,6 +64,23 @@ public class AdminService {
 
     public void deleteAdmin(Integer adminId) {
         adminDao.deleteAdmin(adminId);
+    }
+
+    public Boolean updateAdmin(Admin admin) {
+        Boolean status = false;
+        int i = adminDao.updateAdmin(admin);
+        if (i > 0) {
+            status = true;
+        }
+        return status;
+    }
+    public Boolean updatePassword(Integer id, String newPass) {
+        Boolean status = false;
+        int i = adminDao.updatePassword(id, newPass);
+        if (i > 0) {
+            status = true;
+        }
+        return status;
     }
 
 }

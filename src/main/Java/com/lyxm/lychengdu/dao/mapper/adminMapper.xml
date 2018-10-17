@@ -22,10 +22,20 @@
 
     </insert>
 
+    <delete id="deleteAdmin" parameterType="int">
+        delete from Admin where id=#{id}
+    </delete>
+
+    <update id="updateAdmin">
+        update admin set a_username=#{a_username},a_name=#{a_name} where id=#{id}
+    </update>
     <!-- 查询数据库该账户名是否存在-->
     <select id="existAdmin" resultType="int">
         select count(id) from admin where a_username=#{a_username}
     </select>
 
 
+    <update id="updatePassword">
+        update admin set a_password=#{a_password} where id=#{id}
+    </update>
 </mapper>
