@@ -11,8 +11,8 @@
 
 <!-- 添加客户-->
     <insert id="addCustomer">
-        insert into customer(c_id,c_user,c_name,c_sign,c_pass,c_years,c_time)
-        value(null,#{c_user},#{c_name},#{c_sign},#{c_pass},#{c_years},#{c_time})
+        insert into customer(c_id,c_user,c_name,c_sign,c_pass,c_years,c_time,e_mail，State，code)
+        value(null,#{c_user},#{c_name},#{c_sign},#{c_pass},#{c_years},#{c_time},#{e_mail},#{State},#{code})
     </insert>
 
     <select id="exitsCustomer" resultType="int">

@@ -32,15 +32,15 @@ public class Customercontroller {
 
     public String doCustomeradd(String c_user,String c_name,HttpServletRequest request){
         if(c_user.equals("")){
-            request.setAttribute("mymessage", "编辑失败：账户名不可以为空");
+            request.setAttribute("mymessage", "添加失败：账户名不可以为空");
         }else if(c_name.equals("")){
-            request.setAttribute("mymessage", "编辑失败：网名不可以为空");
+            request.setAttribute("mymessage", "添加失败：网名不可以为空");
         }else if(customerService.eixtsCustomer(c_user)){
-            request.setAttribute("mymessage", "编辑失败：账户名重复，请修改账户名！");
+            request.setAttribute("mymessage", "添加失败：账户名重复，请修改账户名！");
         }else{
             System.out.println(customerService.eixtsCustomer("c_user"+11));
             customerService.addCustomer(c_user,c_name);
-            request.setAttribute("mymessage", "编辑成功：");
+            request.setAttribute("mymessage", "添加成功：");
         }
         return "backstage/customer/customeradd.jsp";
     }

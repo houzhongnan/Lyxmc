@@ -6,7 +6,6 @@ import com.lyxm.lychengdu.model.Strategy;
 import com.lyxm.lychengdu.model.Test;
 import com.lyxm.lychengdu.service.FoodService;
 import com.lyxm.lychengdu.service.HotService;
-import com.lyxm.lychengdu.service.StrategyService;
 import com.lyxm.lychengdu.service.TestService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,7 +39,7 @@ public class StrategyManageControlle {
         int j = 0;
         int k = 3;
         for (int i = j; i < k; i++) {
-            Strategy strategy = new Strategy();
+            Strategy strategy = new Strategy(s_image);
             strategy = strategyList.get(i);
             strategyList2.add(strategy);
         }
@@ -49,7 +48,7 @@ public class StrategyManageControlle {
 
         List<Strategy> strategyList3 = new ArrayList<>();
         for (int i = 3; i < 7; i++) {
-            Strategy strategy = new Strategy();
+            Strategy strategy = new Strategy(s_image);
             strategy = strategyList.get(i);
             strategyList3.add(strategy);
         }

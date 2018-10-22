@@ -9,7 +9,7 @@ public class Customer {
     private  String c_pass;
     private Date c_time;
     private  Date c_years;
-    private  String c_sign;
+private  String c_sign;
 
     public String getC_sign() {
         return c_sign;

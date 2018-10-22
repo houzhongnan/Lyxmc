@@ -34,11 +34,11 @@
         }
          */
 
-       /* $(document).ready(function(){
+        $(document).ready(function(){
 
 
 
-        });*/
+        });
     </script>
 </head>
 <body>
@@ -55,14 +55,12 @@
 
 <div class="formbody">
     <div class="formtitle"></div>
-    <form action="doCustomeradd" method="post">
+    <form action="doAdminadd" method="post">
         <ul class="forminfo">
-            <li><label>游客帐户名：</label><input name="c_user" type="text" class="dfinput" value="" /></li><br/>
-            <li><label>昵称：</label><input name="c_name" type="text" class="dfinput" value=""/></li>
-            <li><label>出生年月：</label><input name="c_years" type="date" class="dfinput" value=""/></li>
-            <li><label>电子邮箱：</label><input name="c_years" type="text" class="dfinput" value=""/></li>
-            <li><label>密码：</label><input name="c_pass" type="text" class="dfinput" value=""/></li>
-            <li><label>个性签名：</label><textarea name="c_sign" type="text" class="dfinput" value="" style="height: 50px;"></textarea></li>
+            <li><label>帐户名：</label><input name="a_username" type="text" class="dfinput" value="" /></li><br/>
+            <li><label>昵称：</label><input name="a_name" type="text" class="dfinput" value=""/></li>
+            <li><label>密码：</label><input name="a_password" type="text" class="dfinput" value=""/></li>
+
             <li><label>&nbsp;</label><input name="btn" type="submit" class="btn" value="确认添加"/></li>
 
         </ul>

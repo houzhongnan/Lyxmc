@@ -1,6 +1,5 @@
 package com.lyxm.lychengdu.model;
 
-
 import java.util.Date;
 
 public class Strategy {
@@ -8,8 +7,14 @@ public class Strategy {
     private String s_name;
     private String s_place;
     private String s_food;
-    private String s_image;
+
+    private  String s_image;
+
     private Date s_createTime;
+
+    public Strategy(String s_image) {
+        this.s_image = s_image;
+    }
 
     public Integer getId() {
         return id;

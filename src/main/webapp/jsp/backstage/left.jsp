@@ -32,8 +32,8 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
 </div>
     <div style="float: left" id="my_menu" class="sdmenu">
       <div class="collapsed">
-        <span>系统设置</span>
-        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">信息管理</a>
+        <span>信息管理</span>
+        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">后台首页</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">发布公告</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">公告列表</a>
         <a href="main_message.jsp" target="mainFrame" onFocus="this.blur()">留言页</a>
@@ -55,7 +55,7 @@ body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y
       </div>
       <div>
         <span>菜单管理</span>
-        <a href="main.jsp" target="mainFrame" onFocus="this.blur()">景点分类</a>
+        <a href="<%=basePath%>jsp/backstage/strategymanage/strategymanage.jsp" target="mainFrame" onFocus="this.blur()">景点分类</a>
         <a href="main_list.jsp" target="mainFrame" onFocus="this.blur()">酒店分类</a>
         <a href="main_info.jsp" target="mainFrame" onFocus="this.blur()">路线分类</a>
         <a href="main.jsp" target="mainFrame" onFocus="this.blur()">目的地</a>
