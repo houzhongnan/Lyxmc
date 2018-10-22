@@ -1,0 +1,297 @@
+/*! CSS Used from: https://img2.tuniucdn.com/guide/0212018101017/public/common/css/common.css,public/common/css/font.css,public/common/css/iconfont.css,public/food/src/css/store.css */
+.container img{vertical-align:bottom;width:100%;height:100%;}
+.container .wrapper{width:1190px;margin:0 auto;}
+.share .share-show{display:none;position:absolute;right:-20px;top:22px;padding-top:8px;background:#f7f7f7;width:110px;height:auto;z-index:99;border:1px solid #e3e3e3;}
+.share .share-show .bdshare-button-style0-24{margin-left:5px;}
+.share .share-show a{display:block;height:22px;width:50px;margin:0 auto;padding-left:0;padding-top:30px;text-align:center;float:left;font-size:12px;line-height:16px;cursor:pointer;}
+.share .share-show .bds_qzone{background:url(https://img2.tuniucdn.com/site/guide/public/common/images/share-icon.png) -192px -17px!important;}
+.share .share-show .bds_tsina{background:url(https://img2.tuniucdn.com/site/guide/public/common/images/share-icon.png) -137px -17px!important;}
+.share .share-show .bds_tqq{background:url(https://img2.tuniucdn.com/site/guide/public/common/images/share-icon.png) -77px -17px!important;}
+.share .share-show .bds_weixin{background:url(https://img2.tuniucdn.com/site/guide/public/common/images/share-icon.png) -20px -17px!important;}
+.iconfont{font-family:"iconfont"!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0.2px;-moz-osx-font-smoothing:grayscale;}
+.colon{width:21px;height:18px;display:inline-block;float:left;margin:2px 10px 0 0;background:url(https://img2.tuniucdn.com/site/guide/public/food/src/images/sprite.png) -663px -225px;}
+.overview{padding-top:20px;height:390px;position:relative;}
+.overview .top{font-size:18px;padding-bottom:30px;}
+.overview .top em{color:#ff9226;}
+.overview .pic{width:700px;position:relative;overflow:hidden;}
+.overview .pic img{width:700px;height:350px;}
+.overview .intro{
+	padding: 32px 20px 0 40px;
+	width: 465px;
+	height: 318px;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
+.overview .intro .top .name{font-size:24px;line-height:36px;font-weight:normal;color:#333;}
+.overview .intro .top .desc{font-size:14px;line-height:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#999;}
+.overview .intro .top .score{font-size:14px;padding-top:10px;height:24px;}
+.overview .intro .top .score i{color:#999;margin-right:5px;vertical-align:-1px;}
+.overview .intro .top .score i:hover{color:#f80;}
+.overview .intro .top .score .center{float:left;cursor:pointer;}
+.overview .intro .top .score .center span{color:#f80;}
+.overview .intro .top .score .share{float:right;margin-right:13px;cursor:pointer;position:relative;}
+.overview .intro .top .score .share i{color:#11CE5F;}
+.overview .intro .middle{padding-top:5px;height:180px;font-size:14px;}
+.overview .intro .middle .title{line-height:35px;}
+.overview .intro .middle .title span{color:#f80;}
+.overview .intro .middle .omit{margin-top:13px;line-height:24px;}
+.overview .backshadow{width:555px;height:435px;display:inline-block;position:absolute;background:url(https://img2.tuniucdn.com/site/guide/public/food/src/images/shadow.png) no-repeat;top:22px;right:-120px;z-index:1;background-size:525px 435px;}
+/*! CSS Used from: http://bdimg.share.baidu.com/static/api/css/share_style0_24.css */
+.bdshare-button-style0-24 .bds_qzone{background-position:0 -52px;}
+.bdshare-button-style0-24 .bds_tsina{background-position:0 -104px;}
+.bdshare-button-style0-24 .bds_tqq{background-position:0 -260px;}
+.bdshare-button-style0-24 .bds_weixin{background-position:0 -1612px;}
+.bdshare-button-style0-24{zoom:1;}
+.bdshare-button-style0-24:after{content:".";visibility:hidden;display:block;height:0;clear:both;}
+.bdshare-button-style0-24 a{float:left;font-size:18px;padding-left:25px;line-height:24px;height:24px;background-image:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_24.png?v=dcaa92d6.png);background-repeat:no-repeat;cursor:pointer;margin:6px 6px 6px 0;}
+.bdshare-button-style0-24 a:hover{color:#333;opacity:.8;filter:alpha(opacity=80);}
+/*! CSS Used from: http://img3.tuniucdn.com/s/20141028/common/reset.css */
+div,h1,p{margin:0;padding:0;}
+img{border:0;}
+p{
+	
+	margin-bottom:20px;}
+em{font-style:normal;font-weight:400;}
+h1{font-size:100%;font-weight:400;}
+:link,:visited,a{text-decoration:none;}
+:focus{outline:0 none;}
+a{color:#404040;}
+.fl{float:left;}
+/*! CSS Used from: http://ssl1.tuniucdn.com/s/20151019/common_foot/common_foot_v3.css */
+.fl{float:left;}
+/*! CSS Used fontfaces */
+@font-face{font-family:"iconfont";src:url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.eot?t=1471602769');src:url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.eot?t=1471602769#iefix') format('embedded-opentype'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.woff?t=1471602769') format('woff'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.ttf?t=1471602769') format('truetype'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.svg?t=1471602769#iconfont') format('svg');}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*餐厅（文字图片）*/
+		/*! CSS Used from: https://img2.tuniucdn.com/guide/0212018101017/public/common/css/common.css,public/common/css/font.css,public/common/css/iconfont.css,public/food/src/css/store.css */
+.container img{vertical-align:bottom;width:100%;height:100%;}
+.container .wrapper{width:600px;margin:0 auto;}
+.star{width:68px;height:12px;display:inline-block;background-image:url(https://img2.tuniucdn.com/site/guide/public/common/images/star.png?623);}
+.star.star-4{background-position:0 -101px;}
+.star.star-3{background-position:0 -114px;}
+.array{display:inline-block;width:21px;height:21px;background:url(https://img2.tuniucdn.com/site/guide/public/common/images/btns.png) -51px 0px;}
+.iconfont{font-family:"iconfont"!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0.2px;-moz-osx-font-smoothing:grayscale;}
+.wrapper h2{text-align:center;font-size:28px;line-height:48px;}
+.summary{border-top:1px solid #e4e4e4;position:relative;margin-top:26px;}
+.summary .info{position:absolute;top:-10px;right:0;background:#fff;font-size:14px;line-height:21px;}
+.summary .info i{margin:0 6px;vertical-align:bottom;}
+.summary .info span{color:#22c233;padding:0 5px;}
+.colon{width:21px;height:18px;display:inline-block;float:left;margin:2px 10px 0 0;background:url(https://img2.tuniucdn.com/site/guide/public/food/src/images/sprite.png) -663px -225px;}
+.srecommend{padding-top:50px;}
+.srecommend .module{margin-top:20px;}
+.srecommend .module .item{width:583px;height:158px;margin-right:10px;float:left;overflow:hidden;position:relative;}
+.srecommend .module .item:hover{box-shadow:0 4px 12px 3px rgba(255, 102, 0, 0.15);}
+.srecommend .module .item .pic{width:280px;position:relative;height:158px;float:left;}
+.srecommend .module .item .pic img{width:280px;}
+.srecommend .module .item .title{position:absolute;left:0;bottom:0;padding:0 10px;width:100%;box-sizing:border-box;background:rgba(0, 0, 0, 0.6);FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#00000000,endColorStr=75000000);background:-webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));background:-moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));background:-ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));background:linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));line-height:34px;text-align:center;color:#fff;font-size:24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.srecommend .module .item .reviews{float:right;width:283px;height:158px;position:relative;font-size:14px;line-height:24px;padding-right:5px;overflow:hidden;}
+.srecommend .module .item .reviews .top{padding:5px 0;}
+.srecommend .module .item .reviews .top .discuss{float:right;font-size:12px;margin-top:-1px;color:#f60;}
+.srecommend .module .item .reviews .top .discuss i{width:14px;height:12px;display:inline-block;}
+.srecommend .module .item .reviews .middle{line-height:25px;}
+.srecommend .module .item2{float:right;margin-right:0;}
+/*! CSS Used from: http://img3.tuniucdn.com/s/20141028/common/reset.css */
+div,h2,p{margin:0;padding:0;}
+img{border:0;}
+h2{font-size:100%;font-weight:400;}
+.clearfix{zoom:1;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+:link,:visited,a{text-decoration:none;}
+:focus{outline:0 none;}
+a{color:#404040;}
+/*! CSS Used from: http://img1.tuniucdn.com/s/201610201115/common/head_divbycat_v6.css,basic_menu/menu.css */
+.clearfix{zoom:1;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+/*! CSS Used fontfaces */
+@font-face{font-family:"iconfont";src:url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.eot?t=1471602769');src:url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.eot?t=1471602769#iefix') format('embedded-opentype'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.woff?t=1471602769') format('woff'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.ttf?t=1471602769') format('truetype'), url('https://img2.tuniucdn.com/site/guide/public/common/fonts/iconfont.svg?t=1471602769#iconfont') format('svg');}
+		
+		
+		
+		/*! CSS Used from: http://css.mafengwo.net/css/cv/css+base:css+jquery.suggest:css+plugins:css+plugins+jquery.jgrowl:css+other+popup:css+mfw-header.2015%5EYlVS%5E1527308432.css */
+p,div{margin:0;padding:0;word-wrap:break-word;}
+h2,h3{margin:0;padding:0;font-size:100%;}
+a{color:#ff9d00;text-decoration:none;cursor:pointer;}
+a:hover{color:#ff8a00;text-decoration:underline;}
+img{border:0;vertical-align:middle;}
+.wrapper:after{content:'\20';clear:both;display:block;}
+.wrapper{*zoom:1;}
+h2,h3,p{margin:0;}
+a{background-color:transparent;text-decoration:none;color:#ff9d00;cursor:pointer;}
+a:hover{outline:0;text-decoration:underline;color:#ff8a00;}
+img{border:0;vertical-align:middle;}
+/*! CSS Used from: http://css.mafengwo.net/css/cv/css+mdd+place-v2:css+mdd+map-mark.v2:css+mdd+scenic-list%5EZlM%5E1522007090.css */
+.row{padding:40px 0;min-width:980px;border-bottom:1px solid #e4e4e4;}
+.row a{color:#643718;}
+.row-bg{background-color:#fafafa;}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.row a{color:#ff9d00;}
+h2.title{font-size:20px;color:#333;font-weight:normal;margin-bottom:25px;line-height:22px;}
+.middle{display:table-cell;vertical-align:middle;}
+.row-hotScenic .bd{margin:0 -20px -20px 0;*zoom:1;}
+.row-hotScenic .grid{float:left;width:242px;height:320px;display:inline;margin:0 15px 20px 0;}
+.row-hotScenic .grid-two{width:485px;}
+.row-hotScenic .grid-two .figure{width:485px;height:320px;}
+.row-hotScenic .grid-two h3{font-size:20px;line-height:30px;}
+.row-hotScenic .figure{width:242px;height:155px;position:relative;margin-bottom:10px;line-height:20px;font-size:14px;overflow:hidden;}
+.row-hotScenic .figure a{color:#fff;display:block;}
+.row-hotScenic h3{font-size:16px;padding-bottom:10px;line-height:24px;font-weight:normal;}
+.row-hotScenic .figure .title{position:absolute;left:0;right:0;bottom:0;padding-left:14px;padding-right:14px;background:-moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(15%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.8)));background:-webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);background:-o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);background:-ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#99000000',GradientType=0);-webkit-transition:opacity .5s ease 0s;transition:opacity .5s ease 0s;}
+.row-hotScenic .mask-container{position:absolute;left:0;top:100%;right:0;bottom:0;padding:15px;background-color:rgba(0,0,0,.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#66000000',GradientType=0);-webkit-transition:top .5s ease 0s;transition:top .5s ease 0s;height:100%;}
+.row-hotScenic .mask{display:table;width:100%;height:100%;}
+.row-hotScenic .figure a:hover .title{opacity:0;display:none\9;}
+.row-hotScenic .figure a:hover .mask-container{top:0;}
+    </style>
+	<style>
+		/*! CSS Used from: http://www.ev123.net/static/css/base.css?126=126 */
+/*! CSS Used from: http://www.ev123.net/static/css/css.css?126=13e6 */
+.StoreMall_mian em{font-style:normal;}
+.StoreMall_mian img{display:block;float:left;width: 100px; height: 100px;}
+.StoreMall_mian span{margin:0;padding:0;}
+.StoreMall_mian{width:100%;margin:100px auto;}
+.StoreMall_list{width:25%;float:left;}
+.StoreMall_list span{display:block;width:100px;height:100px;border-radius:50%;overflow:hidden;margin:0 auto;}
+.StoreMall_list em{display:block;text-align:center;font-size:18px;color:#FFFFFF;padding-top:25px;padding-bottom:10px;}
+.StoreMall_list em:hover{color:#00aeff;}
+.StoreMall_list img:hover{
+	-webkit-transform:rotate(360deg) scale(1.3); 
+	-moz-transform:rotate(360deg) scale(1.3);
+	-ms-transform:rotate(360deg) scale(1.3);
+}
+
+.m-llist1 img:hover{
+	-webkit-transform:rotate(360deg) scale(1.2); 
+	-moz-transform:rotate(360deg) scale(1.2);
+	-ms-transform:rotate(360deg) scale(1.25);
+}
+.m-01{margin: 0 auto !important; width: 100%;}
+.m-01 img{width: 250px; height: 250px;border-radius: 10%; margin-left: 170px;}
+.m-01 .title{margin: 80px auto;text-align: center;color: firebrick;font-size: 1.3em;}
+.m-01 .title span{font-size: 16px; color: #000011 !important;}
+.m-01 .m-llist1{float: left !important;margin-bottom: 50px;flex-wrap: nowrap;white-space:nowrap;}
+.m-01 .m-01_text{font-size: 15px;text-align: center !important;padding-top: 5px;}
+.m-01 .m-01_text span{}
+
+
+
+
+
+/*弹框样式1*/
+.cd-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    z-index:9999;
+}
+.cd-popup.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.cd-popup-container {
+	position: relative;
+	width:1400px;
+	margin:50px auto;
+	height:750px;
+	background: #FFF;
+
+
+    border-radius: .4rem .4rem .4rem .4rem;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transform:scale(1.2);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.cd-popup-close{ position: absolute;right:10px;top:10px; z-index: 10;width:auto;height:1.25rem; display: block;font-size:14px;}
+.is-visible .cd-popup-container {-webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);}
+
+
+/*弹框样式2*/
+.cd-popup1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    z-index:9999;
+}
+.cd-popup1.is-visible1 {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.cd-popup-container1 {
+    position: relative;
+    width:1400px;
+    margin:450px auto;
+    height:250px;
+    background: #FFF;
+    border-radius: .4rem .4rem .4rem .4rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -o-transform: translateY(-60px);
+  transform: translateY(-60px);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.cd-popup-close{ position: absolute;right:10px;top:10px; z-index: 10;width:auto;height:1.25rem; display: block;font-size:14px;}
+.is-visible1 .cd-popup-container1 {
+	-webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  }

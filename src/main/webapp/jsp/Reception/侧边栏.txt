@@ -1,0 +1,146 @@
+<!--侧边栏开始-->
+
+				<div class="mfw-aside">
+
+					<div class="asidebox box-traveller">
+						<div class="asidebox-hd">
+							<h2 class="hd-title"><a href="Writer（作家专栏）/Writer.html">旅行家专栏</a></h2>
+							<a class="hd-right" href="Writer（作家专栏）/Writer.html">更多>>></a>
+						</div>
+						<div class="asidebox-bd" id="_j_traveller_slide">
+							<ul class="slide-ul" >
+								<li>
+									<div class="image">
+										<a data-japp="oplog" data-type="thc" data-key="http://www.mafengwo.cn/traveller/article.php?id=3093" href="Writer（作家专栏）/Writer_a.html" target="_blank">
+											<img src="img/writer/ww03.jpg" height="140" width="260">
+										</a>
+									</div>
+									<h3>
+                                <a data-japp="oplog" data-type="thc" data-key="http://www.mafengwo.cn/traveller/article.php?id=3093" href="Writer（作家专栏）/Writer_a.html" target="_blank">成都旅游秋色绝佳欣赏地</a>
+                            </h3>
+									<p>"三圣花乡"坐落于素有"中国花木之乡"之称...</p>
+								</li>
+				
+							
+							</ul>
+							
+						</div>
+					</div>
+					<!--旅游攻略推模块荐-->
+					<div class="asidebox box-gonglve">
+						<div class="asidebox-hd">
+							<h2 class="hd-title">旅游攻略推荐</h2>
+							<a class="hd-right" href="Strategy(攻略)/Strategy.html">更多</a>
+						</div>
+						<div class="asidebox-bd">
+							<dl class="clearfix">
+								<dt>
+                                <a href="#"target="_blank">
+                                    <img src="img/Strategy/S01.jpg" alt="南京旅游攻略" height="150" width="120">
+                                </a>
+                            </dt>
+								<dd>
+									<h3>
+                                                                        <a href="#"title="南京">成都</a>
+                                </h3>
+									<p>超实用3天2晚成都旅游攻略，小姐姐带你玩转成都</p>
+								</dd>
+							</dl>
+						
+						</div>
+					</div>
+
+					<div class="asidebox box-gowild">
+
+					</div>
+					<!--最新活动模块（成都最新的举办过的活动）-->
+					<div class="asidebox box-traveller box-activity">
+						<div class="asidebox-hd">
+							<h2 class="hd-title">最新活动</h2>
+							<a class="hd-right" href="Travels（节日）/Travels.html">查看全部&gt;</a>
+						</div>
+						<div class="asidebox-bd" id="_j_activity_slide">
+							<ul class="slide-ul" style="left: -260px;">
+								<li>
+									<div class="image">
+										<a class="_js_h5_url" data-h5_img="https://p4-q.mafengwo.net/s12/M00/42/CD/wKgED1uasUaAcHx_AAACspuDvrY009.png?imageMogr2%2Fthumbnail%2F%21150x150r%2Fquality%2F90">
+											<img src="https://n2-q.mafengwo.net/s12/M00/80/4A/wKgED1ubKnKAfjjbAAEk3CUQ2P046.jpeg?imageView2%2F2%2Fw%2F260%2Fh%2F178%2Fq%2F90" height="178" width="260">
+										</a>
+									</div>
+			
+								</li>
+								<li>
+									<div class="image">
+										<a href="Travels（节日）/Travels.html" target="_blank">
+											<img src="img/Travels/2018126105201_72306.jpg" height="178" width="260">
+										</a>
+									</div>
+									<h3>
+                <a href="#"target="_blank">熊猫灯会</a>
+            </h3>
+									<p>作为2018成都国际熊猫灯会的分会场，西岭雪山在开启2018炫彩夜滑季的同时，精心为游客呈上一组组美轮美奂的灯盏，让游客们提前感受熊猫灯会的璀璨与梦幻</p>
+								</li>
+				
+							</ul>
+							
+
+						</div>
+						<div id="_js_activity_h5_url" class="activity_h5url" style="display: none;"><img src="" height="150" width="150">
+							<p>快用手机扫描参与活动吧～</p><i>╳</i></div>
+
+						<style>
+							/* 微信弹层 */
+							
+							.wx-mfw-pop {
+								width: 420px;
+								height: 285px;
+								padding-top: 45px;
+								text-align: center;
+								font-size: 16px;
+								color: #666;
+								line-height: 1.8em;
+							}
+							
+							.wx-mfw-pop img {
+								margin-top: 10px;
+							}
+						</style>
+
+					</div>
+					<div class="da-banner"></div>
+
+					<!--成都新闻模块（最新新闻）-->
+					<div class="asidebox box-news">
+						<div class="asidebox-hd">
+							<div class="hd-title">成都窝网
+								<h2><a href="Travels（节日）/Travels.html">旅行网站</a></h2>最新进展</div>
+						</div>
+						<ul class="asidebox-bd">
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">熊猫灯会  璀璨蓉城</a>
+							</li>
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">成都本土美食受欢迎</a>
+							</li>
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">桃源?万物生长</a>
+							</li>
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">好吃嘴的成都觅食指南</a>
+							</li>
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">"逛、吃，逛、吃，逛吃逛吃逛吃......"</a>
+							</li>
+							<li>
+								<a href="Travels（节日）/Travels.html" rel="nofollow">中外萌娃朗诵桃花赋</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--
+            	作者：495171477@qq.com
+            	时间：2018-09-21
+            	描述：侧边栏结束
+            -->
+
+			</div>

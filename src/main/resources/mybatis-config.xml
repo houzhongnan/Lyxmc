@@ -12,6 +12,10 @@
 		<typeAlias alias="Strategy" type="com.lyxm.lychengdu.model.Strategy"/>
 		<typeAlias alias="Food" type="com.lyxm.lychengdu.model.Food"/>
 		<typeAlias alias="Hot" type="com.lyxm.lychengdu.model.Hot"/>
+		<typeAlias alias="Meal" type="com.lyxm.lychengdu.model.Meal"/>
+		<typeAlias alias="Hotel" type="com.lyxm.lychengdu.model.Hotel"/>
+		<typeAlias alias="Traffic" type="com.lyxm.lychengdu.model.Traffic"/>
+		<typeAlias alias="Destination" type="com.lyxm.lychengdu.model.Destination"/>
 		<typeAlias alias="Test" type="com.lyxm.lychengdu.model.Test"/>
 	</typeAliases>
 
@@ -23,7 +27,12 @@
 		<mapper resource="com/lyxm/lychengdu/dao/mapper/strategyMapper.xml"/>
 		<mapper resource="com/lyxm/lychengdu/dao/mapper/foodMapper.xml"/>
 		<mapper resource="com/lyxm/lychengdu/dao/mapper/hotMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/mealMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/hotelMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/trafficMapper.xml"/>
+		<mapper resource="com/lyxm/lychengdu/dao/mapper/destinationMapper.xml"/>
         <mapper resource="com/lyxm/lychengdu/dao/mapper/testMapper.xml"/>
+
 
 	</mappers>
 
